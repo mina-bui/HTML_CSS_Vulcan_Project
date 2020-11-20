@@ -1,0 +1,10 @@
+// Typography Styling
+
+body {
+    font-family: $bodyFont;
+}
+
+h1, h2, h3, h4, {
+    font-family: $headingFont;
+    font-weight: 400;
+}
