@@ -1,1 +1,26 @@
-// Place your Sass imports here...
+// Master SASS File
+/*      author: mina, olivia, vinson
+	    date: 2020-11-20
+	    title: Vulcan - scss
+*/
+// Variables 
+@import 'vars/vars';
+
+// Mixins
+@import 'mixins/mixins';
+
+// Resets
+@import 'resets/normalize';
+@import 'resets/boxreset';
+
+// Typography 
+@import 'typography/typography';
+
+// HTML Components
+@import 'components/body';
+@import 'components/wrapper';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/main';
+@import 'components/footer';
+@import 'components/images';
