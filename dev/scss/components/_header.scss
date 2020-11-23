@@ -2,14 +2,14 @@
 
 header {
     //color: white;
-    height: 600px;
+    height: 830px;
     //border: 5px solid red;
     position: relative;
 
     // Make all elements in header to be position absolute
     .top-header, 
     .logo,
-    .headerbar, 
+    .header-bar, 
     .nav-bar, 
     .splash-text,
     .header-button, 
@@ -25,10 +25,20 @@ header {
 
     // Logo Positioning
     .logo {
-        top: 8px;
-        left: 8px;
-        z-index: 100;
+        top: 15px;
+        left: 15px;
+        z-index: 200;
         width: 30%;
+    }
+
+    .header-bar {
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        height: 90px;
+        background-color: rgb(43, 43, 43);
+        opacity: 0.5;
     }
 
 
