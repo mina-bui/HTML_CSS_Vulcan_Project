@@ -8,7 +8,8 @@ header {
 
     // Make all elements in header to be position absolute
     .top-header, 
-    .logo, 
+    .logo,
+    .headerbar, 
     .nav-bar, 
     .splash-text,
     .header-button, 
@@ -24,11 +25,12 @@ header {
 
     // Logo Positioning
     .logo {
-        top: 0;
-        left: 0;
+        top: 8px;
+        left: 8px;
         z-index: 100;
         width: 30%;
     }
+
 
     // Splash-text Positioning
     .splash-text {
@@ -57,7 +59,6 @@ header {
     .header-white-wave {
         height: 100px;
         width: 100%;
-       
     }
 
 }
