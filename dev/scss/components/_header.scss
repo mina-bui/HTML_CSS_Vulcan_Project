@@ -1,7 +1,86 @@
 // Header Style Sheet
 
+header {
+    //color: white;
+    height: 600px;
+    //border: 5px solid red;
+    position: relative;
 
+    // Make all elements in header to be position absolute
+    .top-header, 
+    .logo, 
+    .nav-bar, 
+    .splash-text,
+    .header-button {
+        position: absolute;
+    } 
 
+    // For now in mobile mode, hide specific elements in header
+    .top-header,  
+    .nav-bar {
+        display: none;
+    }
+
+    // Logo Positioning
+    .logo {
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 30%;
+    }
+
+    // Splash-text Positioning
+    .splash-text {
+        top: 18%;
+        left: 0;
+        z-index: 100;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+    }
+
+    // Header Button Positioning
+    .header-button {
+        top: 50%;
+        left: 28%;
+        z-index: 100;
+    }
+
+}
+
+// Header Buttons Styling
+.header-button-1, .header-button-2
+{
+    font-family: $headingFont;
+    //font-weight: ;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 13px 25px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: -webkit-flex;
+}
+
+.splash-text h1 {
+    text-transform: uppercase;
+}
+
+.header-slideshow {
+    height: 100%;
+} 
+
+.header-slideshow {
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+} 
 
 
 /* 
@@ -34,4 +113,26 @@ Cycle Pager (For Slideshow)
 
 .cycle-pager > * {
     cursor: pointer;
+}
+
+
+/* 
+---------------------------------------
+Media Query
+---------------------------------------
+*/
+/*--- Mobile ---*/
+@media (min-width: 500px) {
+
+}
+
+
+/*--- Tablet ---*/
+@media (min-width: 900px) {
+
+}
+
+/*--- Desktop ---*/
+@media (min-width: 1000px) {
+
 }
