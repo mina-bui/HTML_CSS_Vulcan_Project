@@ -9,4 +9,13 @@
 Cycle Pager (For Slideshow)
 ---------------------------------------
 */
+.cycle-pager {
+    text-align: center;
+    width: 100%;
+    z-index: 500;
+    position: absolute;
+    top: 10px;
+    overflow: hidden;
+}
+
 
