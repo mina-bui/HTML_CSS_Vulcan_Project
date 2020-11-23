@@ -4,24 +4,39 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Vulcan</title>
-
-	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
-	<!-- Put Google Fonts Here -->
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<!--Heading Font: Roboto Condensed -->
+	<!-- Body Content Font: Roboto - Weights: 400, 500, 700 - Styles: 400i
+	(italic @ 400 weight)-->
 	<!-- end Google Fonts -->
-
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 	<link rel="stylesheet" href="styles/styles.css?cb=1">
 </head>
 <body>
-<!-- Put your HTML code here... -->
 <div class ="wrapper"> 
 	<header>
-		<h1>Replace Me with Your HTML Code...</h1>
-		<h3>Install Map | Product Literature</h3>
-		<h3>+1 712-642-2755 | Contact Us</h3>
+
+		<!-- FIRST SECTION: GENERAL INFO -->
+
+		<div class="top-header">
+			<div>Install Map</div>
+			<div>Product Literature</div>
+			<div>+1 712-642-2755</div>
+			<div>Contact Us</div>
+		</div>
+
+		<!-- LOGO -->
+
+		<div class="logo">
+			<img class="logo-image" src="/images/logo-white-vulcan.svg" alt="vulcan-logo">
+		</div>
+
+		<!-- NAVIGATION -->
+
 		<nav>
 			<ul>
 				<li><a href="#0">About</a></li>
@@ -32,11 +47,168 @@
 				<li><a href="#0">Contact</a></li>
 			</ul>
 		</nav>
+	</header>
 
-	</header>	
+	<!-- SLIDESHOW -->
 
+	<div class="slides">
+		<h1>We Design and Fabricate Indestructible Wastewater screens. Enough Said.</h1>
+		<button>View products</button>
+		<button>View Services</button>
+	</div>
 
+	<!-- MAIN -->
 
+	<main>
+
+		<!-- SECOND SECTION: CUSTOMIZED PER ORDER -->
+
+		<section class="white-background">
+			<h2>Customized per order</h2>
+			<p>
+				Just as no two treatment plants are the same, no two of our screening,
+				grit handling or sludge thickening products are either. We'll help determine
+				exactly what you need.
+			</p>
+
+			<div>
+				<img src="images/machine-01-300x274.png">
+				<h3>Screening</h3>
+				<a href=#0>View Selection</a>
+			</div>
+
+			<div>
+				<img src="images/machine-02-300x274.png">
+				<h3>Screening Handling</h3>
+				<a href=#0>View Selection</a>
+			</div>
+
+			<div>
+				<img src="images/machine-03-300x274.png">
+				<h3>Grit Handling</h3>
+				<a href=#0>View Selection</a>
+			</div>
+
+			<div>
+				<img src="images/machine-04-300x274.png">
+				<h3>Sludge Thickening</h3>
+				<a href=#0>View Selection</a>
+			</div>
+		</section>
+
+		<!-- THIRD SECTION: PRODUCT ADVISOR -->
+
+		<section class="product-selection">
+			<h2>Product Advisor</h2>
+			<h3>Find your project's perfect fit.</h3>
+			<span id="br-line"></span>
+
+		<form action="/" method="get">
+			<div>
+				<label for="product-type">Product Type</label>
+				<select name="product-type" id="product-type">
+					<option value="Select">Select</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="screen-location">Screen Location</label>
+				<select name="screen-location" id="screen-location">
+					<option value="Select">Select</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="flow=type">Flow Type</label>
+				<select name="flow-type" id="flow-type">
+					<option value="Select">Select</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="channel-depth">Channel Depth</label>
+				<select name="channel-depth" id="channel-depth">
+					<option value="Select">Select</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="channel-width">Channel Width</label>
+				<select name="channel-width" id="channel-width">
+					<option value="Select">Select</option>
+				</select>
+			</div>
+
+		</form>
+	<button>Find My Product</button>
+</section>
+
+		<!-- FOURTH SECTION : ABOUT US -->
+
+		<section class="third-section">
+			<h2>Delivering clean, safe water since 1975. Refreshed indeed.</h2>
+				<p>Vulcan wastewater screening equipment has played a vital role in protecting the water supply
+				of more than 900 cities and communities throughout the world.
+				</p>
+
+			<button>About us</button>
+		</section>
+
+		<!-- FIFTH SECTION: VIDEO SECTION -->
+
+		<iframe id="video" src="https://player.vimeo.com/video/183929811?title=0&byline=0&portrait=0" 
+		width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+		</iframe>
+
+		<!-- NEWS LETTER & EMAIL -->
+		
+		<section class="footer-section">
+			<div>
+				<h4>Stay in the know. Sign up for our news letter.</h4>
+			</div>
+				<form action="/" method="get">
+					<div class="form group email-group">
+						<div>
+							<label class="visually-hidden" for="email"></label>
+							<input type="email" name="email" id="email" placeholder="Enter your email">
+						</div>
+						<div>
+							<button type="submit">Submit</button>
+						</div>
+					</div>
+				</form>
+		</section>
+
+		<!-- SIXTH SECTION -->
+
+		<section class="sixth-section-container">
+			<div class="contact">
+				<h5>Ready To Spec Vulcan For Your Project?</h5>
+				<button>Contact Us</button>
+			</div>
+
+			<div class="map">
+				<h5>Installed In A City Near You</h5>
+				<button>Find A Vulcan Install</button>
+			</div>
+
+		</section>
+	</main>
+
+		<!-- FOOTER -->
+		
+		<footer>
+			<div>
+				<img src="images/logo-white-vulcan.svg">
+			</div>
+			<div>
+				<div><a href="#0" target="_blank"><img class="facebook" alt="facebook" src="images/icon-white-facebook.png"></a></div>
+				<div><a href="#0" target="_blank"><img class="linkedin" alt="linkedin" src="images/icon-white-linkedin.png"></a></div>
+				<div><p>Contact Us</p></div>
+				<div><p>Copyright 2017. All Rights Reserved</p></div>
+			</div>
+		</footer>
+	</div>
 
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
