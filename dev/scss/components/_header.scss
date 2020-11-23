@@ -11,7 +11,8 @@ header {
     .logo, 
     .nav-bar, 
     .splash-text,
-    .header-button {
+    .header-button, 
+    .header-wave {
         position: absolute;
     } 
 
@@ -36,14 +37,27 @@ header {
         z-index: 100;
         text-align: center;
         color: white;
-        font-weight: 700;
+        font-size: large;
+        font-weight: bolder;
     }
 
     // Header Button Positioning
     .header-button {
-        top: 50%;
+        top: 45%;
         left: 28%;
         z-index: 100;
+    }
+
+    // Header Wave Positioning
+    .header-wave {
+        bottom: -1%;
+        z-index: 100;
+    }
+
+    .header-white-wave {
+        height: 100px;
+        width: 100%;
+       
     }
 
 }
@@ -93,7 +107,7 @@ Cycle Pager (For Slideshow)
     width: 100%;
     z-index: 500;
     position: absolute;
-    bottom: 20px;
+    bottom: 80px;
     overflow: hidden;
 }
 
