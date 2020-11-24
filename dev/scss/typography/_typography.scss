@@ -5,7 +5,14 @@ body {
     font-weight: 400;
 }
 
-h1, h2, h3, h4 {
+ h2, h3, h4 {
     font-family: $headingFont;
-    font-weight: 400;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+h1 {
+    font-family: $headingFont;
+    font-weight: 700;
 }

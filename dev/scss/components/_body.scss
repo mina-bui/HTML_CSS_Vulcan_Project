@@ -1,1 +1,47 @@
-// Body Style Sheet
+
+
+// SECOND SECTION STYLES AND MEDIA QUERIES: CUSTOMIZED PER ORDER
+
+.white-background {
+    a {
+        display: none;
+    }
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.customize-order-section {
+
+    h2 {
+    text-align: center;
+    }
+
+    p {
+        text-align: center;
+        padding: 5px 80px 0 80px;
+    
+    }
+}
+
+.machine-01, .machine-02, .machine-03,
+.machine-04 {
+
+   img {
+       width: 100%;
+       height: auto;
+   }
+    padding-top: 40px;
+    display: flex;
+
+    h3 {
+        margin-top: 80%;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+}
+
+.br-section2 {
+    border-top: 2px solid #cccccc;
+    margin: 20px;
+}

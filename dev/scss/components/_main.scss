@@ -1,1 +1,27 @@
-// Main Style Sheet
+
+
+
+// THIRD SECTION: PRODUCT ADVISOR 
+
+
+.product-selection {
+    background-color: #244a64;
+    padding: 0;
+
+    h2 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 50px;
+        font-size: 30px;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+.form-group {
+    display: block;
+}
