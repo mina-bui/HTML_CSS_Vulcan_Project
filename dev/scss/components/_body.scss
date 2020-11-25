@@ -48,7 +48,7 @@
 }
 
 
-// SECTION FOUR
+// SECTION FOUR STYLING
 
 .section-4 {
     background-image: url('/images/bg-section-about-us.jpg');
@@ -86,5 +86,63 @@
     font-size: 1.1em;
     cursor: pointer;
     display: -webkit-flex;
+    }
+}
+
+// VIDEO STYLING
+
+.video-container {
+    background-color: #429bd6;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.video {
+    max-width: 65%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid #244a64;
+    background-color: #367d22;
+}
+
+// NEWS LETTER & EMAIL SECTION STYLING
+
+.newsletter-section {
+
+    background-color: #bedcef;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+
+    h4 {
+        text-align: center;
+        text-transform: none;
+        font-family: $bodyFont;
+        font-size: 1.4em;
+        font-weight: 400;
+        color: $blueDark;
+    }
+
+    .newsletter-group {
+        display: flex;
+    }
+
+    .form-group input{
+    display: block;
+    border: none;
+    padding: 10px 50% 10px 10px;
+   
+    }
+
+    .form-group button {
+        background-color: #429bd6;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 10px;
+        margin-left: 5px;
     }
 }
