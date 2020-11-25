@@ -17,6 +17,12 @@ h1 {
     font-weight: 700;
 }
 
+.splash-text h1 {
+    font-family: $headingFont;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 nav a {
     font-family: $headingFont;
     font-weight: 400;
