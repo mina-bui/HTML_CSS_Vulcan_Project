@@ -1,12 +1,12 @@
 
-
-
-// THIRD SECTION: PRODUCT ADVISOR 
+// SECTION THREE: PRODUCT ADVISOR 
 
 
 .product-selection {
-    background-color: #244a64;
-    padding: 0;
+    background-color: hsl(204, 47%, 27%);
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
 
     h2 {
         color: rgb(255, 255, 255);
@@ -22,6 +22,42 @@
     }
 }
 
+.br-section3 {
+    border-top: 2px solid white;
+    margin: 18px;
+}
+
 .form-group {
+    margin:3%;
+}
+
+.form-group select {
     display: block;
+    width: 100%;
+    padding: 2%;
+    background-color: #edeeee;
+}
+
+.form-group label {
+    color: white;
+    font-weight: 700;
+}
+
+.form-row1, .form-row2,.form-row3,
+.form-row4, .form-row5 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section3-button {
+   background-color: #429bd6;
+   border: none;
+   color:white;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 20px;
+   margin-top: 40px;
+   text-transform: uppercase;
+   display: block;
+   width: 95%;
 }

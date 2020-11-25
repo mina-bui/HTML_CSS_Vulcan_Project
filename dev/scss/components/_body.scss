@@ -1,6 +1,7 @@
 
 
-// SECOND SECTION STYLES AND MEDIA QUERIES: CUSTOMIZED PER ORDER
+// SECTION TWO: CUSTOMIZED PER ORDER
+
 
 .white-background {
     a {
@@ -44,4 +45,46 @@
 .br-section2 {
     border-top: 2px solid #cccccc;
     margin: 20px;
+}
+
+
+// SECTION FOUR
+
+.section-4 {
+    background-image: url('/images/bg-section-about-us.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30%;
+    padding-top: 30%;
+
+    h2 {
+        text-align: center;
+        padding-top: 40px;
+        color: white;
+        font-size: 2.5em;
+    }
+
+    p {
+        text-align: center;
+        padding: 30px 80px 40px 80px;
+        color: white;
+        font-size: 1.3em;
+    }
+
+    button {
+    font-family: $headingFont;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 13px 25px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: -webkit-flex;
+    }
 }
