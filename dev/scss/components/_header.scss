@@ -115,9 +115,20 @@ nav a {
     color: white;
     text-transform: uppercase;
     line-height: 30px;
-
 }
 
+// Hover States for Nav
+nav a:hover,
+nav a:active,
+nav a:focus {
+    outline: none;
+    background-color: $navBarHover;
+}
+
+// Hamburger Styles 
+.btn-menu {
+    margin: 0 20px 20px 0;
+}
 
 
 
