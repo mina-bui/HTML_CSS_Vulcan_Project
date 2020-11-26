@@ -1,8 +1,4 @@
 // Write your JavaScript here...
-
-
-
-
 /*
 -----------------------------------------
 // JavaScript Document For SlideDown Menu
