@@ -107,7 +107,7 @@
     background-color: #367d22;
 }
 
-// NEWS LETTER & EMAIL SECTION STYLING
+// NEWS LETTER & EMAIL SECTION BAR
 
 .newsletter-section {
 
@@ -149,7 +149,7 @@
     }
 }
 
-// Section 6
+// SECTION 6 STYLING
 .map {
     background-image: url('/images/map.jpg');
     background-attachment: scroll;
@@ -215,5 +215,14 @@
         font-size: 1.5em;
         cursor: pointer;
         display: -webkit-flex;
+    }
+}
+
+// MEDIA QUERY : SECTION 6
+
+@media (min-width: $tabletMedium){
+    
+    .sixth-section-container {
+        display: flex;
     }
 }
