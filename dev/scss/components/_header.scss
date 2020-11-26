@@ -199,7 +199,10 @@ Media Query
     }
     // Display Top Header Links
     .top-header {
+        z-index: 150;
         display: flex;
+        color: white:
+        font-family: $headingFont;
     }
     
     // Move logo to center and resize!
