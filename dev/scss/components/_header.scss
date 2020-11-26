@@ -13,7 +13,7 @@ header {
 
     // Make all elements in header to be position absolute
     .top-header, 
-    .logo,
+    //.logo,
     .header-bar, 
     .btn-menu,
     .nav-bar, 
@@ -30,10 +30,12 @@ header {
 
     // Logo Positioning
     .logo {
+        position: fixed;
         top: 10px;
         left: 10px;
         z-index: 250;
-        width: 28%;
+        width: 135px;
+
     }
 
     .header-bar {
@@ -54,7 +56,7 @@ header {
     .nav-bar {
         top: 75px;
         left: 0;
-        z-index: 150;
+        z-index: 250;
         background-color: rgb(43, 43, 43, 0.5);
         margin: 0;
         padding: 0;
@@ -104,7 +106,7 @@ Class Element Selector
     text-transform: uppercase;
     background-color: transparent;
     color: white;
-    border: 2px solid white;
+    border: 1.5px solid white;
     padding: 10px 10px;
     margin: 20px;
     text-align: center;
@@ -113,7 +115,6 @@ Class Element Selector
     cursor: pointer;
     display: -webkit-flex;
 }
-
 
 .header-slideshow {
     height: 100%;
@@ -170,22 +171,72 @@ Media Query
 @media (min-width: $mobileMedium) {
     header {
         display: block;
+
     }
+    
 
 }
 
 
 /*--- Tablet ---*/
 @media (min-width: $tabletSmall) {
-
+    
 }
 
 @media (min-width: $tabletMedium) {
+    
+    
 
 }
 
 /*--- Desktop ---*/
 @media (min-width: $desktopSmall) {
+    header{
+    // Get rid of Header Bar & Extra navigation links!
+    .header-bar,
+    .mobile-nav { 
+        display: none;
+    }
+    // Display Top Header Links
+    .top-header {
+        display: flex;
+    }
+    
+    // Move logo to center and resize!
+    .logo {
+        top: 9%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 190px;
+            
+    }
+
+    // Nav Bar Resize / Reposition
+    .nav-bar {
+        top: 17.5%;
+        display: inline-block;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-right: 30px;
+        width: 90%;
+    }
+
+    .splash-text {
+        top: 30%;
+        margin: 30px;
+
+    }
+
+
+
+    .header-button {
+        display: flex;
+        font-weight: 700;
+        top: 70%;
+   
+    }
+
+}
 
 }
 

@@ -29,3 +29,43 @@ nav a {
     font-weight: 400;
 }
 
+
+
+
+/* 
+---------------------------------------
+Media Query
+---------------------------------------
+*/
+/*--- Mobile ---*/
+@media (min-width: $mobileMedium) {
+  
+}
+
+
+/*--- Tablet ---*/
+@media (min-width: $tabletSmall) {
+    
+}
+
+@media (min-width: $tabletMedium) {
+    
+
+}
+
+/*--- Desktop ---*/
+@media (min-width: $desktopSmall) {
+    header {
+
+    .splash-text {
+        font-size: 1.2em;
+
+    }
+
+}
+
+}
+
+@media (min-width: $desktopRegular) {
+
+}
