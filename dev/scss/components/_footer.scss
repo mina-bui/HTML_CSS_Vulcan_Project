@@ -16,12 +16,13 @@ footer {
         margin-right: auto;
         width: 30%;
         padding-top: 20%;
-        margin-bottom: 10%;
+        margin-bottom: 8%;
     }
 
-    p {
+    .grid-item p {
         color: white;
-        font-weight: bold;
+        font-weight: 500;
+        font-size: 1.25em;
         text-transform: uppercase;
     }
     
@@ -34,8 +35,10 @@ footer {
     
     // Single line copyright sentence
     .footer-copy {
+        color: white;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: 500;
+        font-size: 1.25em;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 30px;
