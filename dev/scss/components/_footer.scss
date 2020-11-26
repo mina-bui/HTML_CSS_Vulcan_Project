@@ -17,11 +17,15 @@ footer {
     // Four column grid box
     .footer-elements-container {
         display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-row-gap: 10px;
     }
     // Single line copyright sentence
     .footer-copy {
         text-transform: uppercase;
         text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 }
 
