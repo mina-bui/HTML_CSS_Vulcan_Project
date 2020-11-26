@@ -7,7 +7,7 @@
 // Responsive Menu - Dropdown
 const body = document.body;
 const btnMenu = document.getElementById('btn-menu');
-const nav = document.getElementById('main-navigation');
+const nav = document.getElementById('nav-bar');
 
 // Below code for preventing nav from animating on 
 // browser re-size modified from code found at
