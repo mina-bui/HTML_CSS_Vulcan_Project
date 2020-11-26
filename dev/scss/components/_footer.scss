@@ -21,6 +21,8 @@ footer {
 
     p {
         color: white;
+        font-weight: bold;
+        text-transform: uppercase;
     }
     
     // Six column grid box
@@ -33,6 +35,7 @@ footer {
     // Single line copyright sentence
     .footer-copy {
         text-transform: uppercase;
+        font-weight: bold;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 30px;
