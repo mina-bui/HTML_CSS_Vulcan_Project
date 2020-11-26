@@ -2,7 +2,7 @@
 
 footer {
     background-color: $footerblue;
-
+    // Single line Vulcan Logo
     img {
         display: block;
         margin-left: auto;
@@ -14,13 +14,14 @@ footer {
     p {
         color: white;
     }
-
+    // Four column grid box
     .footer-elements-container {
-        display: flex;
+        display: grid;
     }
-
+    // Single line copyright sentence
     .footer-copy {
         text-transform: uppercase;
+        text-align: center;
     }
 }
 
