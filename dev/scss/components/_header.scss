@@ -30,7 +30,7 @@ header {
 
     // Logo Positioning
     .logo {
-        position: fixed;
+        position: absolute;
         top: 10px;
         left: 10px;
         z-index: 250;
@@ -201,7 +201,7 @@ Media Query
     .top-header {
         z-index: 150;
         display: flex;
-        color: white:
+        color: white;
         font-family: $headingFont;
     }
     
