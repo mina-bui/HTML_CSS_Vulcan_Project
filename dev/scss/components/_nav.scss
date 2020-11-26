@@ -136,7 +136,14 @@ Media Query
 ---------------------------------------
 */
 /*--- Mobile ---*/
-@media (min-width: 560px) {
+@media (min-width: $tabletMedium) {
+    
+
+}
+
+
+/*--- Tablet ---*/
+@media (min-width: $desktopSmall) {
     header {
         display: block;
     }
@@ -175,12 +182,6 @@ Media Query
         background-color: transparent;
         outline: none;
     } 
-
-}
-
-
-/*--- Tablet ---*/
-@media (min-width: 900px) {
 
 }
 

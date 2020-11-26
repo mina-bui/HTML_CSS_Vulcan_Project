@@ -167,7 +167,7 @@ Media Query
 ---------------------------------------
 */
 /*--- Mobile ---*/
-@media (min-width: 560px) {
+@media (min-width: $mobileMedium) {
     header {
         display: block;
     }
@@ -176,11 +176,19 @@ Media Query
 
 
 /*--- Tablet ---*/
-@media (min-width: 900px) {
+@media (min-width: $tabletSmall) {
+
+}
+
+@media (min-width: $tabletMedium) {
 
 }
 
 /*--- Desktop ---*/
-@media (min-width: 1000px) {
+@media (min-width: $desktopSmall) {
+
+}
+
+@media (min-width: $desktopRegular) {
 
 }
