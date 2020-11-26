@@ -87,16 +87,72 @@
     cursor: pointer;
     display: -webkit-flex;
     }
+
+    @media (min-width: $tabletMedium) {
+        h2 {
+            text-align: center;
+            color: white;
+            font-size: 3.2em;
+            padding:20px;
+        }
+    
+        p {
+            text-align: center;
+            padding: 30px 30px 30px 30px;
+            color: white;
+            font-size: 1.3em;
+        }
+    }
+
+    @media (min-width: $desktopRegular) {
+
+        p {
+            text-align: center;
+            padding: 30px 150px 40px 150px;
+            color: white;
+            font-size: 1.3em;
+        }
+    }
 }
 
 // VIDEO STYLING
 
 .video-container {
+    position: relative;
     background-color: #429bd6;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    width: 100%;
+    height: 500px;
 }
 
+iframe {
+    position: absolute;
+    top:50px;
+    right: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    @media (min-width: $tabletMedium) {
+
+        iframe {
+            width: 70%;
+        }
+
+        .video-container {
+            position: relative;
+            background-color: #429bd6;
+            width: 100%;
+            height: 700px;
+        }
+    }
+
+}
+
+/*
 .video {
     max-width: 65%;
     display:block;
@@ -106,6 +162,7 @@
     border: 20px solid #154a66;
     background-color: #367d22;
 }
+*/
 
 // NEWS LETTER & EMAIL SECTION BAR
 
@@ -115,6 +172,9 @@
     padding-left: 15px;
     padding-top: 30px;
     padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     
 
     h4 {
@@ -127,15 +187,18 @@
     }
 
     .newsletter-group {
-        display: flex;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .form-group input{
-    display: block;
+    display: inline-block;
     border: none;
-    padding: 10px 170px 10px 10px;
-    width: 100%;
-    height: auto;
+    padding: 10px 10px 10px 10px;
+    width: 75%;
+    height: 2.5em;
+    
     }
 
     .form-group button {
@@ -144,9 +207,48 @@
         color: white;
         text-transform: uppercase;
         font-weight: 700;
-        padding: 10px;
+        padding: 11px;
         margin-left: 10px;
     }
+
+    @media (min-width: 850px) {
+
+        display: flex;
+        flex-direction: row;
+
+        h4 {
+            text-align: center;
+            text-transform: none;
+            font-family: $bodyFont;
+            font-size: 1.2em;
+            font-weight: 400;
+            color: $blueDark;
+        }
+
+        .newsletter-section {
+            display: flex;
+            background-color: #bedcef;
+            
+          
+        }    
+
+        .form-group .newsletter-group {
+            margin:0;
+        }
+
+        
+    
+
+
+    }
+
+
+
+
+
+
+
+
 }
 
 // SECTION 6 STYLING
