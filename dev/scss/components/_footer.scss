@@ -1,21 +1,22 @@
 // Footer Style Sheet
 
 footer {
-    // wavy background image
-    background-color: $footerblue;
-    background-image: url('/dev/images/wave-blue-light.png');
-    max-height: 500px;
-    width: auto;
-    padding-left: 2%;
-    padding-right: 2%;
     
+    // wavy footer styling
+    .wave {
+        position: relative;
+        max-height: 500px;
+        width: auto;
+        background-color: $footerblue;
+    }
+
     // Single line Vulcan Logo
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 30%;
-        padding-top: 20%;
+        padding-top: 10%;
         margin-bottom: 8%;
     }
 
@@ -30,8 +31,10 @@ footer {
     // Six column grid box
     .footer-elements-container {
         display: grid;
-        grid-template-columns: 6fr 6fr 5.5fr 2.5fr 5.5fr 2.5fr;
+        grid-template-columns: auto auto auto auto auto auto;
         height: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     
     // Single line copyright sentence
@@ -43,7 +46,7 @@ footer {
         font-size: 1.25em;
         text-align: center;
         padding-top: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
 }
 
