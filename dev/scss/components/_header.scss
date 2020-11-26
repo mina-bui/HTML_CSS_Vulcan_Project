@@ -33,7 +33,8 @@ header {
         top: 10px;
         left: 10px;
         z-index: 250;
-        width: 28%;
+        width: 135px;
+
     }
 
     .header-bar {
@@ -170,22 +171,27 @@ Media Query
 @media (min-width: $mobileMedium) {
     header {
         display: block;
+
+    
     }
+    
 
 }
 
 
 /*--- Tablet ---*/
 @media (min-width: $tabletSmall) {
-
+    
 }
 
 @media (min-width: $tabletMedium) {
+    
 
 }
 
 /*--- Desktop ---*/
 @media (min-width: $desktopSmall) {
+    
 
 }
 
