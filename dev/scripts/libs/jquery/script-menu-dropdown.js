@@ -1,9 +1,5 @@
-// Write your JavaScript here...
-/*
------------------------------------------
-// JavaScript Document For SlideDown Menu
------------------------------------------
-*/
+// JavaScript Document
+
 // Responsive Menu - Dropdown
 const body = document.body;
 const btnMenu = document.getElementById('btn-menu');
@@ -56,7 +52,6 @@ function removeTransition(e){
 		nav.classList.remove('activated');
 	}
 }
-
 
 
 
