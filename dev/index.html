@@ -109,7 +109,18 @@
 
 
 			<div class="machine-01">
-				<div><img src="images/machine-01-300x274.png"></div>
+				<div><img src="images/machine-01-300x274.png"
+							srcset="images/machine-01-300x274.png 300w,
+									images/machine-01-768x702.png 768w,
+									images/machine-01-912x834.png 912w"
+
+								sizes=""
+
+								alt="machine">
+							
+				
+				
+				</div>
 				<div><h3>Screening</h3></div>
 				<a href=#0>View Selection</a>
 			</div>
@@ -154,43 +165,46 @@
 
 
 		<form action="/" method="get">
+			
 			<div class="form-group">
 			
 				<div class="form-row1">
-				<label for="product-type">Product Type</label>
-				<select name="product-type" id="product-type">
-					<option value="Select">Select</option>
-				</select>
-			</div>
+					<label for="product-type">Product Type</label>
+						<select name="product-type" id="product-type">
+						<option value="Select">Select</option>
+					</select>
+				</div>
 
-			<div class="form-row2">
-				<label for="screen-location">Screen Location</label>
-				<select name="screen-location" id="screen-location">
-					<option value="Select">Select</option>
-				</select>
-			</div>
+				<div class="form-row2">
+					<label for="screen-location">Screen Location</label>
+					<select name="screen-location" id="screen-location">
+						<option value="Select">Select</option>
+					</select>
+				</div>
 
-			<div class="form-row3">
-				<label for="flow=type">Flow Type</label>
-				<select name="flow-type" id="flow-type">
-					<option value="Select">Select</option>
-				</select>
-			</div>
+				<div class="form-row3">
+					<label for="flow=type">Flow Type</label>
+					<select name="flow-type" id="flow-type">
+						<option value="Select">Select</option>
+					</select>
+				</div>
+		
+		
+				<div class="form-row4">
+					<label for="channel-depth">Channel Depth</label>
+					<select name="channel-depth" id="channel-depth">
+						<option value="Select">Select</option>
+					</select>
+				</div>
 
-			<div class="form-row4">
-				<label for="channel-depth">Channel Depth</label>
-				<select name="channel-depth" id="channel-depth">
-					<option value="Select">Select</option>
-				</select>
+				<div class="form-row5">
+					<label for="channel-width">Channel Width</label>
+					<select name="channel-width" id="channel-width">
+						<option value="Select">Select</option>
+					</select>
+				</div>
+			
 			</div>
-
-			<div class="form-row5">
-				<label for="channel-width">Channel Width</label>
-				<select name="channel-width" id="channel-width">
-					<option value="Select">Select</option>
-				</select>
-			</div>
-		</div>
 		</form>
 	<button class="section3-button">Find My Product</button>
 </section>
