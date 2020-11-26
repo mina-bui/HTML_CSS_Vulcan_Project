@@ -1,8 +1,14 @@
 // Footer Style Sheet
 
 footer {
+    // wavy background image
     background-color: $footerblue;
-    z-index: 1;
+    background-image: url('/dev/images/wave-blue-light.png');
+    max-height: 500px;
+    width: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    
     // Single line Vulcan Logo
     img {
         display: block;
@@ -16,12 +22,14 @@ footer {
     p {
         color: white;
     }
+    
     // Six column grid box
     .footer-elements-container {
         display: grid;
         grid-template-columns: 6fr 6fr 5.5fr 2.5fr 5.5fr 2.5fr;
         height: 100%;
     }
+    
     // Single line copyright sentence
     .footer-copy {
         text-transform: uppercase;
