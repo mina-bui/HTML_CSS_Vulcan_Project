@@ -196,6 +196,7 @@ Media Query
     .mobile-nav { 
         display: none;
     }
+
     // Display Top Header Links
     .top-header {
         z-index: 150;
@@ -221,7 +222,6 @@ Media Query
         display: flex;
         justify-content: space-between;
     }
-
 
     .right-header {
         position: absolute;
@@ -258,8 +258,6 @@ Media Query
 
     }
 
-
-
     .header-button {
         display: flex;
         font-weight: 700;
@@ -270,6 +268,27 @@ Media Query
 }
 
 }
+
+
+@media (min-width: 950px) {
+    header{
+        
+        .left-header {
+            //position: absolute;
+            left: 60px;
+            
+        }
+        
+    
+        .right-header {
+            //position: absolute;
+            left: 660px;
+            
+        }
+    }
+
+}
+
 
 @media (min-width: $desktopRegular) {
 
