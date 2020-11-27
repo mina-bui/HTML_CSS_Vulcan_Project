@@ -312,25 +312,26 @@ iframe {
     h4 {
         text-align: center;
         text-transform: none;
+        letter-spacing: -0.75px;
         font-family: $bodyFont;
-        font-size: 1.4em;
-        font-weight: 400;
+        font-size: 1.5em;
+        font-weight: 500;
         color: $blueDark;
     }
-
+    
+    // label, input, button
     .newsletter-group {
-        display: block;
+        align-items: center;
         margin-left: auto;
         margin-right: auto;
     }
 
     .form-group input{
-    display: inline-block;
-    border: none;
-    padding: 10px 10px 10px 10px;
-    width: 75%;
-    height: 2.5em;
-    
+        display: inline-block;
+        border: none;
+        padding: 10px 10px 10px 10px;
+        width: 70%;
+        height: 2.5em;
     }
 
     .form-group button {
@@ -338,9 +339,12 @@ iframe {
         border: none;
         color: white;
         text-transform: uppercase;
+        letter-spacing: -0.75px;
+        font-size: 1.3em;
         font-weight: 700;
-        padding: 11px;
-        margin-left: 10px;
+        padding: 5.5px 20px 5.5px 20px;
+        margin-left: 5px;
+        height: 1.90em;
     }
 
     // MEDIA QUERY : SECTION 6
@@ -352,6 +356,7 @@ iframe {
         h4 {
             text-align: center;
             text-transform: none;
+            letter-spacing: -0.75px;
             font-family: $bodyFont;
             font-size: 1.2em;
             font-weight: 400;
