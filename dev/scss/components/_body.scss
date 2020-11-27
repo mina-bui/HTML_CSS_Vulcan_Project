@@ -44,6 +44,10 @@
     margin-right: 60px;
 }
 
+.machine-01 img {
+    margin-top: 20px;
+}
+
 // Machine 02
 .machine-02 h3 {
     margin-top: 33%;
@@ -80,12 +84,14 @@
     margin-left: 60px;
 }
 
-
-
-
 .br-section2 {
     border-top: 2px solid #cccccc;
     margin: 20px;
+}
+
+@media (min-width: $tabletMedium) {
+    
+
 }
 
 
