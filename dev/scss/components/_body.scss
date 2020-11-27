@@ -183,11 +183,7 @@
     }
 }
 
-
-
-
-// SECTION 4 STYLING
-
+// SECTION 3 STYLING : "About Us"
 .section-4 {
     background-image: url('/images/bg-section-about-us.jpg');
     background-attachment: fixed;
@@ -226,6 +222,7 @@
     display: -webkit-flex;
     }
 
+    // MEDIA QUERY : SECTION 3
     @media (min-width: $tabletMedium) {
         h2 {
             text-align: center;
@@ -243,7 +240,6 @@
     }
 
     @media (min-width: $desktopRegular) {
-
         p {
             text-align: center;
             padding: 30px 150px 40px 150px;
@@ -253,8 +249,7 @@
     }
 }
 
-// VIDEO STYLING
-
+// SECTION 4: VIDEO STYLING
 .video-container {
     position: relative;
     background-color: #429bd6;
@@ -274,6 +269,7 @@ iframe {
     margin-right: auto;
     display: block;
 
+    // MEDIA QUERY: SECTION 4
     @media (min-width: $tabletMedium) {
 
         iframe {
@@ -290,22 +286,20 @@ iframe {
 
 }
 
-/*
-.video {
-    max-width: 65%;
-    display:block;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border: 20px solid #154a66;
-    background-color: #367d22;
-}
-*/
+    /*
+    .video {
+        max-width: 65%;
+        display:block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border: 20px solid #154a66;
+        background-color: #367d22;
+    }
+    */
 
-// NEWS LETTER & EMAIL SECTION BAR
-
+// SECTION 5: NEWS LETTER & EMAIL SECTION BAR
 .newsletter-section {
-
     background-color: #bedcef;
     padding-left: 15px;
     padding-top: 30px;
@@ -314,7 +308,6 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     
-
     h4 {
         text-align: center;
         text-transform: none;
@@ -349,6 +342,7 @@ iframe {
         margin-left: 10px;
     }
 
+    // MEDIA QUERY : SECTION 6
     @media (min-width: 850px) {
 
         display: flex;
@@ -366,103 +360,98 @@ iframe {
         .newsletter-section {
             display: flex;
             background-color: #bedcef;
-            
-          
         }    
 
         .form-group .newsletter-group {
             margin:0;
         }
-
-        
-    
-
-
-    }
-
-
-
-
-
-
-
-
-}
-
-// SECTION 6 STYLING
-.map {
-    background-image: url('/images/map.jpg');
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 30%;
-    padding-top: 30%;
-
-    h5 {
-        text-align: center;
-        color: #504f4f;
-        text-transform: uppercase;
-        font-size: 2.5em;
-        padding-bottom: 10px;
-    }
-
-    button {
-        font-family: $headingFont;
-        text-transform: uppercase;
-        font-weight: 700;
-        background-color: transparent;
-        color: #504f4f;
-        border: 2px solid #504f4f;
-        padding: 13px 25px;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1.5em;
-        cursor: pointer;
-        display: -webkit-flex;
     }
 }
 
-.contact {
-    background-color: #154a66;
-    padding-top: 25%;
-    padding-bottom: 25%;
+// SECTION 6 STYLING : "City Near You" and "Spec Vulcan" Banners
+    // "installed in a city near you. find a vulcan install"
+    .map {
+        background-image: url('/images/map.jpg');
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 30%;
+        padding-top: 30%;
 
-    h5 {
-        text-align: center;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-size: 2em;
-        padding-bottom: 30px;
-        padding-top:0;
-        padding-left: 13%;
-        padding-right: 13%;
+        h5 {
+            text-align: center;
+            color: #504f4f;
+            text-transform: uppercase;
+            letter-spacing: -0.75px;
+            font-size: 2em;
+            font-weight: 700;
+            padding-bottom: 20px;
+        }
+
+        button {
+            font-family: $headingFont;
+            text-transform: uppercase;
+            letter-spacing: -0.75px;
+            font-weight: 700;
+            background-color: transparent;
+            color: #504f4f;
+            border: 2px solid #504f4f;
+            padding: 13px 25px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            display: -webkit-flex;
+        }
     }
 
-    button {
-        font-family: $headingFont;
-        text-transform: uppercase;
-        font-weight: 700;
-        background-color: transparent;
-        color: #ffffff;
-        border: 2px solid #ffffff;
-        padding: 13px 25px;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1.5em;
-        cursor: pointer;
-        display: -webkit-flex;
-    }
-}
+    // "ready to spec vulcan for your project? contact us"
+    .contact {
+        background-color: #154a66;
+        padding-top: 20%;
+        padding-bottom: 40%;
 
-// MEDIA QUERY : SECTION 6
+        h5 {
+            text-align: center;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: -0.75px;
+            font-size: 2em;
+            font-weight: 700;
+            padding-bottom: 30px;
+            padding-top: 0;
+            padding-left: 13%;
+            padding-right: 13%;
+        }
 
-@media (min-width: $tabletMedium){
-    
-    .sixth-section-container {
-        display: flex;
+        button {
+            font-family: $headingFont;
+            text-transform: uppercase;
+            letter-spacing: -0.75px;
+            font-weight: 700;
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            padding: 13px 25px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.4em;
+            cursor: pointer;
+            display: -webkit-flex;
+        }
     }
-}
+
+    // MEDIA QUERY : SECTION 6
+
+    @media (min-width: $tabletMedium){
+        .sixth-section-container {
+            display: flex;
+        }
+    }
+    @media (min-width: $desktopRegular) {
+
+    }
