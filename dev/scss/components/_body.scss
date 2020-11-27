@@ -1,13 +1,10 @@
-
+// Body Styling
 
 // SECTION TWO: CUSTOMIZED PER ORDER
-
-
 .white-background {
     a {
         display: none;
     }
-
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -19,19 +16,23 @@
 }
 
 .customize-order-section {
-
     h2 {
-    text-align: center;
+        text-align: center;
+        top: -10px;
     }
 
     p {
         text-align: center;
-        padding: 20px 80px 0 80px;
-    
+        padding-top: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 
-.machine-01, .machine-02, .machine-03,
+// Images Sizing for each machine
+.machine-01, 
+.machine-02, 
+.machine-03,
 .machine-04 {
 
    img {
@@ -41,12 +42,24 @@
     padding-top: 40px;
     display: flex;
 
+    /*
     h3 {
         margin-top: 80%;
         margin-left: 20px;
         font-size: 25px;
     }
+    */
 }
+
+// Machine 01
+.machine-01 h3 {
+    margin-top: 70%;
+    margin-right: 60px;
+    
+}
+
+
+
 
 .br-section2 {
     border-top: 2px solid #cccccc;

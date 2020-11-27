@@ -29,6 +29,29 @@ nav a {
     font-weight: 400;
 }
 
+// Section 2
+.customize-order-section h2 {
+    font-family: $headingFont;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.3em;
+}
+
+.customize-order-section p {
+    font-family: $bodyFont;
+    font-weight: 500;
+    //text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+.machine-01 {
+    font-family: $headingFont;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    
+}
+
 
 
 
