@@ -73,9 +73,6 @@ nav a {
 }
 
 
-
-
-
 /* 
 ---------------------------------------
 Media Query
@@ -93,6 +90,50 @@ Media Query
 }
 
 @media (min-width: $tabletMedium) {
+
+    //--- Section 2
+    // Machine 01
+    .machine-01 h3 {
+        color: $footerblue;
+    }
+    .machine-01 a {
+        text-transform: none;
+        font-family: $bodyFont;
+        color: grey;
+        font-size: 0.7em;
+    }
+    // Machine 02
+    .machine-02 h3 {
+        color: $footerblue;
+        text-align: center;
+    }
+    .machine-02 a {
+        text-transform: none;
+        font-family: $bodyFont;
+        color: grey;
+        font-size: 0.7em;
+    }
+    // Machine 03
+    .machine-03 h3 {
+        color: $footerblue;
+    }
+    .machine-03 a {
+        text-transform: none;
+        font-family: $bodyFont;
+        color: grey;
+        font-size: 0.7em;
+    }
+    // Machine 04
+    .machine-04 h3 {
+        color: $footerblue;
+    }
+    .machine-04 a {
+        text-transform: none;
+        font-family: $bodyFont;
+        color: grey;
+        font-size: 0.7em;
+    }
+    
     
 
 }
