@@ -455,7 +455,17 @@ iframe {
     @media (min-width: $tabletMedium){
         .sixth-section-container {
             display: flex;
+            flex-direction: row;
         }
+        .map {
+            display: flex;
+
+            order: 2;
+        }
+        .contact {
+            display: flex;
+
+            order: 1;
     }
     @media (min-width: $desktopRegular) {
 
