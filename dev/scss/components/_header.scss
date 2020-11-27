@@ -212,6 +212,26 @@ Media Query
     .top-header img {
         width: 20px;
     }
+
+    .left-header {
+        position: absolute;
+        width: 260px;
+        top: 10px;
+        left: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .right-header {
+        position: absolute;
+        width: 290px;
+        top: 10px;
+        left: 550px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     
     // Move logo to center and resize!
     .logo {
