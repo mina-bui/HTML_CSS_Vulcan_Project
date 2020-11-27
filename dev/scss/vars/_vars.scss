@@ -36,32 +36,6 @@ Fonts
 $headingFont: 'Roboto Condensed', sans-serif;
 $bodyFont: 'Roboto', sans-serif;
 
-// fontello fonts for the 'email' and 'phone' symbols
-//fontello-40c42a99
-@font-face {
-    font-family: 'roboto';
-    src: url('../font/roboto.eot?94953166');
-    src: url('../font/roboto.eot?94953166#iefix') format('embedded-opentype'),
-         url('../font/roboto.woff2?94953166') format('woff2'),
-         url('../font/roboto.woff?94953166') format('woff'),
-         url('../font/roboto.ttf?94953166') format('truetype'),
-         url('../font/roboto.svg?94953166#roboto') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-//fontello-717cb7bc
-@font-face {
-    font-family: 'roboto';
-    src: url('../font/roboto.eot?59459535');
-    src: url('../font/roboto.eot?59459535#iefix') format('embedded-opentype'),
-         url('../font/roboto.woff2?59459535') format('woff2'),
-         url('../font/roboto.woff?59459535') format('woff'),
-         url('../font/roboto.ttf?59459535') format('truetype'),
-         url('../font/roboto.svg?59459535#roboto') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-
 /* 
 ------------------
 Dimensions
