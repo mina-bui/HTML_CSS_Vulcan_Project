@@ -160,7 +160,6 @@ Cycle Pager (For Slideshow)
     cursor: pointer;
 }
 
-
 /* 
 ---------------------------------------
 Media Query
@@ -183,8 +182,6 @@ Media Query
 }
 
 @media (min-width: $tabletMedium) {
-    
-    
 
 }
 
@@ -217,7 +214,7 @@ Media Query
     .left-header {
         position: absolute;
         width: 260px;
-        top: 10px;
+        top: 13px;
         left: 80px;
         display: flex;
         justify-content: space-between;
@@ -226,8 +223,9 @@ Media Query
     .right-header {
         position: absolute;
         width: 290px;
-        top: 10px;
+        top: 13px;
         left: 550px;
+        //right: -850px;
         display: flex;
         justify-content: space-between;
     }
@@ -264,8 +262,25 @@ Media Query
         top: 70%;
    
     }
+}
 
 }
+
+@media (min-width: 925px) {
+    header{
+        
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+        
+        .right-header {
+            top: 13px;
+            left: 590px;
+            
+        }
+    }
 
 }
 
@@ -274,14 +289,14 @@ Media Query
     header{
         
         .left-header {
-            //position: absolute;
+            top: 13px;
             left: 60px;
             
         }
         
     
         .right-header {
-            //position: absolute;
+            top: 13px;
             left: 660px;
             
         }
@@ -289,7 +304,163 @@ Media Query
 
 }
 
+@media (min-width: 1050px) {
+    header{
+        
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+        
+        .right-header {
+            top: 13px;
+            left: 690px;
+            
+        }
+    }
+
+}
+
+@media (min-width: 1100px) {
+    header{
+        
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+        
+        .right-header {
+            top: 13px;
+            left: 730px;
+            
+        }
+    }
+
+}
+
+@media (min-width: 1170px) {
+    header{
+        
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+        
+        .right-header {
+            top: 13px;
+            left: 785px;
+            
+        }
+    }
+
+}
 
 @media (min-width: $desktopRegular) {
+    header {
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+    
+        .right-header {
+            top: 13px;
+            left: 800px;
+            
+        }
+    }
+}
+
+
+@media (min-width: 1250px) {
+    header{
+        
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+        
+        .right-header {
+            top: 13px;
+            left: 860px;
+            
+        }
+    }
+
+}
+
+@media (min-width: 1300px) {
+    header{
+        
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+        
+        .right-header {
+            top: 13px;
+            left: 920px;
+            
+        }
+    }
+
+}
+
+@media (min-width: 1380px) {
+    header{
+        
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+        
+        .right-header {
+            top: 13px;
+            left: 970px;
+            
+        }
+    }
+
+}
+
+@media (min-width: 1430px) {
+    header{
+        
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+        
+        .right-header {
+            top: 13px;
+            left: 1030px;
+            
+        }
+    }
+
+}
+
+@media (min-width: 1480px) {
+    header{
+        
+        .left-header {
+            top: 13px;
+            left: 60px;
+            
+        }
+        
+        .right-header {
+            top: 13px;
+            left: 1110px;
+            
+        }
+    }
 
 }
