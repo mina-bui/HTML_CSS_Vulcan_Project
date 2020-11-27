@@ -169,12 +169,8 @@ Media Query
 @media (min-width: $mobileMedium) {
     header {
         display: block;
-
     }
-    
-
 }
-
 
 /*--- Tablet ---*/
 @media (min-width: $tabletSmall) {
@@ -188,97 +184,89 @@ Media Query
 /*--- Desktop ---*/
 @media (min-width: $desktopSmall) {
     header{
-    // Get rid of Header Bar & Extra navigation links!
-    .header-bar,
-    .mobile-nav { 
-        display: none;
+        // Get rid of Header Bar & Extra navigation links!
+        .header-bar,
+        .mobile-nav { 
+            display: none;
+        }
+
+        // Display Top Header Links
+        .top-header {
+            z-index: 150;
+            display: flex;
+        }
+
+        .top-header a {
+            font-family: $headingFont;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .top-header img {
+            width: 20px;
+        }
+
+        .left-header {
+            position: absolute;
+            width: 260px;
+            top: 13px;
+            left: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .right-header {
+            position: absolute;
+            width: 290px;
+            top: 13px;
+            left: 550px;
+            //right: -850px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        // Move logo to center and resize!
+        .logo {
+            top: 9%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 160px;
+        }
+
+        // Nav Bar Resize / Reposition
+        .nav-bar {
+            top: 17.5%;
+            display: inline-block;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-right: 30px;
+            width: 90%;
+        }
+
+        .splash-text {
+            top: 30%;
+            margin: 40px;
+        }
+
+        .header-button {
+            display: flex;
+            font-weight: 700;
+            top: 70%;
+        }
     }
-
-    // Display Top Header Links
-    .top-header {
-        z-index: 150;
-        display: flex;
-    }
-
-    .top-header a {
-        font-family: $headingFont;
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    .top-header img {
-        width: 20px;
-    }
-
-    .left-header {
-        position: absolute;
-        width: 260px;
-        top: 13px;
-        left: 80px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .right-header {
-        position: absolute;
-        width: 290px;
-        top: 13px;
-        left: 550px;
-        //right: -850px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    
-    // Move logo to center and resize!
-    .logo {
-        top: 9%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 190px;
-            
-    }
-
-    // Nav Bar Resize / Reposition
-    .nav-bar {
-        top: 17.5%;
-        display: inline-block;
-        margin-left: 40px;
-        margin-right: 40px;
-        padding-right: 30px;
-        width: 90%;
-    }
-
-    .splash-text {
-        top: 30%;
-        margin: 30px;
-
-    }
-
-    .header-button {
-        display: flex;
-        font-weight: 700;
-        top: 70%;
-   
-    }
-}
-
 }
 
 @media (min-width: 925px) {
     header{
-        
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
         .right-header {
             top: 13px;
             left: 590px;
-            
         }
     }
 
@@ -287,18 +275,15 @@ Media Query
 
 @media (min-width: 950px) {
     header{
-        
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
     
         .right-header {
             top: 13px;
             left: 660px;
-            
         }
     }
 
@@ -306,17 +291,14 @@ Media Query
 
 @media (min-width: 1050px) {
     header{
-        
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
         .right-header {
             top: 13px;
             left: 690px;
-            
         }
     }
 
@@ -324,17 +306,34 @@ Media Query
 
 @media (min-width: 1100px) {
     header{
-        
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
         .right-header {
             top: 13px;
-            left: 730px;
-            
+            left: 730px;   
+        }
+
+        .logo {
+            top: 10.5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 170px;
+        }
+
+        // Nav Bar Resize / Reposition
+        .nav-bar {
+            top: 20%;
+            left: 7%;
+            padding-right: 25px;
+            width: 80%;
+        }
+
+        .splash-text {
+            top: 40%;
+            margin: 30px;
         }
     }
 
@@ -342,17 +341,14 @@ Media Query
 
 @media (min-width: 1170px) {
     header{
-        
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
         .right-header {
             top: 13px;
             left: 785px;
-            
         }
     }
 
@@ -363,13 +359,11 @@ Media Query
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
     
         .right-header {
             top: 13px;
             left: 800px;
-            
         }
     }
 }
@@ -377,17 +371,29 @@ Media Query
 
 @media (min-width: 1250px) {
     header{
-        
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
         .right-header {
             top: 13px;
-            left: 860px;
-            
+            left: 887px;
+        }
+
+        // Nav Bar Resize / Reposition
+        .nav-bar {
+            top: 20%;
+            left: 12%;
+            padding-right: 25px;
+            width: 70%;
+            height: 75px;
+            padding-top: 17px;
+        }
+
+        .splash-text {
+            top: 21%;
+            margin: 180px;
         }
     }
 
@@ -399,13 +405,21 @@ Media Query
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
         .right-header {
             top: 13px;
             left: 920px;
-            
+        }
+
+        // Nav Bar Resize / Reposition
+        .nav-bar {
+            top: 20%;
+            left: 14%;
+            padding-right: 25px;
+            width: 65%;
+            height: 75px;
+            padding-top: 17px;
         }
     }
 
@@ -413,20 +427,47 @@ Media Query
 
 @media (min-width: 1380px) {
     header{
-        
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
         .right-header {
             top: 13px;
             left: 970px;
-            
+        }
+
+        // Nav Bar Resize / Reposition
+        .nav-bar {
+            top: 21%;
+            left: 16.5%;
+            padding-right: 25px;
+            width: 60%;
+            height: 75px;
+            padding-top: 17px;
         }
     }
 
+}
+
+@media (min-width: 1400px) {
+    header{
+        // Nav Bar Resize / Reposition
+        .nav-bar {
+            top: 22%;
+            left: 18.5%;
+            padding-right: 25px;
+            width: 58%;
+            height: 75px;
+            padding-top: 17px;
+        }
+
+        .splash-text {
+            top: 11%;
+            margin: 200px;
+        }
+
+    }
 }
 
 @media (min-width: 1430px) {
@@ -435,16 +476,24 @@ Media Query
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
         .right-header {
             top: 13px;
             left: 1030px;
-            
+        }
+
+        .header-button {
+            top: 81%;
+            left: 49.5%;
+        }
+
+        .header-button a {
+            padding-left: 35px;
+            padding-right: 35px;
+            margin-left: 25.5px;
         }
     }
-
 }
 
 @media (min-width: 1480px) {
@@ -453,13 +502,11 @@ Media Query
         .left-header {
             top: 13px;
             left: 60px;
-            
         }
         
         .right-header {
             top: 13px;
-            left: 1110px;
-            
+            left: 1130px;
         }
     }
 

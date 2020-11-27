@@ -151,6 +151,17 @@ Media Query
 
 }
 
-@media (min-width: $desktopRegular) {
+@media (min-width: 1400px) {
+    header {
+        .splash-text {
+            font-size: 1.8em;
+        }
+
+        .header-button {
+            font-size: 0.8em;
+        
+
+        }
+    }
 
 }
