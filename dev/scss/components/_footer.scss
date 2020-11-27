@@ -31,23 +31,22 @@ footer {
     }
 
     // styling footer text
-    .grid-item p {
+    .flex-item p {
         color: white;
         letter-spacing: -0.75px;
         font-weight: 500;
-        font-size: 1.25em;
+        font-size: 1em;
         text-transform: uppercase;
     }
     
-    // Six column grid box
+    // Six column flex
     .footer-elements-container {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
+        display: flex;
         height: 100%;
         padding-left: 5%;
         padding-right: 5%;
     }
-    
+
     // Single line copyright sentence
     .footer-copy {
         color: white;
@@ -59,6 +58,14 @@ footer {
         padding-top: 20px;
         padding-bottom: 50px;
     }
+    #footer-element-2,
+    #footer-element-3 {
+        margin: 0;
+        border: red;
+    }
+
+// --------------------------------------------------
+    
     // all elements on one line
     @media (min-width: $tabletMedium) {
         // wavy footer styling
@@ -81,17 +88,21 @@ footer {
             width: 15%;
         }
             // styling footer text
-        .grid-item p {
+        .flex-item p {
             font-size: 1em;
         }
         // contact information
         .footer-elements-container {
+            display: flex;
         }
         // copyright line
         .footer-copy {
             font-size: 1em;
         }
     }
+
+// --------------------------------------------------
+
     // all elements on one line
     @media (min-width: $desktopRegular) {
         // wavy footer styling
@@ -112,7 +123,7 @@ footer {
             width: 15%;
         }
             // styling footer text
-        .grid-item p {
+        .flex-item p {
             font-size: 1em;
         }
         // contact information
