@@ -2,7 +2,8 @@
 
 footer {
     position: relative;
-    // wavy image on top of footer
+
+    // wavy footer
      .light-blue-wave {
         position: absolute;
         width: 100%;
@@ -10,58 +11,87 @@ footer {
         top: -110px;
         left: 0px;
     } 
-
-    // wavy footer styling
     .wave {
-        max-height: 500px;
+        max-height: 500fr;
         width: auto;
         background-color: $footerblue;
     }
 
-    // Single line Vulcan Logo
-    img {
+    // mobile: single line Vulcan Logo
+    .footer-vulcan-logo img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 30%;
-        padding-top: 10%;
-        margin-bottom: 8%;
+        height: auto;
+        width: 200px;
+        padding-top: 0px;
+        margin-bottom: 25px;
     }
-    // styling footer text
+
+    // mobile: single line copyright sentence
+    .footer-copy {
+        color: white;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.25em;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
+
+    // mobile: column flex
+    .footer-elements-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .flex-item {
+        padding-left: 15px;
+    }
     .flex-item p {
         color: white;
-        letter-spacing: -0.75px;
+        letter-spacing: -1px;
         font-weight: 500;
         font-size: 1em;
         text-transform: uppercase;
     }
 
-    // column flex
-    .footer-elements-container {
-        display: flex;
-        justify-content: flex-start;
-        height: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
+    // adjusting icon sizes
+    .facebook {
+        height: auto;
+        width: 40px;
     }
-
-    // Single line copyright sentence
-    .footer-copy {
-        color: white;
-        letter-spacing: -0.75px;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 1.25em;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 50px;
+    .linkedin {
+        height: auto;
+        width: 40px;
     }
-
+    .phone {
+        height: auto;
+        width: 25px;
+    }
+    .email {
+        height: auto;
+        width: 25px;
+    }
 // --------------------------------------------------
     
     // all elements on one line
     @media (min-width: $tabletMedium) {
-
+        .footer-vulcan-logo img {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 200px;
+            padding-top: 0px;
+            margin-bottom: 25px;
+        }
     }
 
 // --------------------------------------------------
@@ -71,6 +101,3 @@ footer {
 
     }
 }
-
-
-
