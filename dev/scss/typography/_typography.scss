@@ -41,7 +41,7 @@ nav a {
     font-family: $bodyFont;
     font-weight: 500;
     //text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 1.2em;
 }
 
 .machine-01 {
@@ -49,8 +49,29 @@ nav a {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1.5em;
-    
 }
+
+.machine-02 {
+    font-family: $headingFont;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+
+.machine-03 {
+    font-family: $headingFont;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.machine-04 {
+    font-family: $headingFont;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
 
 
 

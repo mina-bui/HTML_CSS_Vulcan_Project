@@ -34,28 +34,50 @@
 .machine-02, 
 .machine-03,
 .machine-04 {
-
-   img {
-       width: 100%;
-       height: auto;
-   }
-    padding-top: 40px;
     display: flex;
 
-    /*
-    h3 {
-        margin-top: 80%;
-        margin-left: 20px;
-        font-size: 25px;
-    }
-    */
 }
 
 // Machine 01
 .machine-01 h3 {
-    margin-top: 70%;
+    margin-top: 57%;
     margin-right: 60px;
-    
+}
+
+// Machine 02
+.machine-02 h3 {
+    margin-top: 33%;
+    margin-right: 35px;
+}
+
+.machine-02 img {
+    width: 75%;
+    height: auto;
+    margin-left: 60px;
+}
+
+// Machine 03
+.machine-03 h3 {
+    margin-top: 45%;
+    margin-right: 50px;
+}
+
+.machine-03 img {
+    width: 73%;
+    height: auto;
+    margin-left: 60px;
+}
+
+// Machine 04
+.machine-04 h3 {
+    margin-top: 33%;
+    margin-right: 50px;
+}
+
+.machine-04 img {
+    width: 73%;
+    height: auto;
+    margin-left: 60px;
 }
 
 
