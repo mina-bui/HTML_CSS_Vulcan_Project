@@ -2,16 +2,16 @@
 
 footer {
     position: relative;
-    //border: 10px solid red;
     
     // wavy image on top of footer
-    .light-blue-wave {
+     .light-blue-wave {
         position: absolute;
         width: 100%;
         height: 110px;
         top: -110px;
         left: 0px;
-    }
+    } 
+
 
     // wavy footer styling
     .wave {
@@ -35,13 +35,15 @@ footer {
         color: white;
         letter-spacing: -0.75px;
         font-weight: 500;
-        font-size: 1em;
+        font-size: 1.25em;
         text-transform: uppercase;
     }
     
+
     // Six column flex
     .footer-elements-container {
         display: flex;
+        justify-content: flex-start;
         height: 100%;
         padding-left: 5%;
         padding-right: 5%;
@@ -57,11 +59,6 @@ footer {
         text-align: center;
         padding-top: 20px;
         padding-bottom: 50px;
-    }
-    #footer-element-2,
-    #footer-element-3 {
-        margin: 0;
-        border: red;
     }
 
 // --------------------------------------------------
