@@ -200,8 +200,17 @@ Media Query
     .top-header {
         z-index: 150;
         display: flex;
-        color: white;
+    }
+
+    .top-header a {
         font-family: $headingFont;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .top-header img {
+        width: 20px;
     }
     
     // Move logo to center and resize!
