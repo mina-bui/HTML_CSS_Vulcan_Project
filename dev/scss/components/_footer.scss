@@ -31,10 +31,10 @@ footer {
     // mobile: single line copyright sentence
     .footer-copy {
         color: white;
-        letter-spacing: -1px;
+        letter-spacing: -0.75px;
         text-transform: uppercase;
         font-weight: 500;
-        font-size: 1.25em;
+        font-size: 1em;
         text-align: center;
         padding-top: 15px;
         padding-bottom: 35px;
@@ -56,7 +56,7 @@ footer {
     }
     .flex-item p {
         color: white;
-        letter-spacing: -1px;
+        letter-spacing: -0.75px;
         font-weight: 500;
         font-size: 1em;
         text-transform: uppercase;
@@ -79,9 +79,12 @@ footer {
         height: auto;
         width: 25px;
     }
+    .facebook-linkedin {
+        display: flex;
+        padding-right: 15px;
+    }
 // --------------------------------------------------
-    
-    // all elements on one line
+    // two lines: vulcan and contact on one line, copyright on second line
     @media (min-width: $tabletMedium) {
         .footer-vulcan-logo {
             padding-left: 10px;
@@ -106,14 +109,17 @@ footer {
             padding: 0px;
             margin: 0px;
         }
+        .facebook-linkedin {
+            display: flex;
+            padding-right: 35px;
+        }
     }
 
 // --------------------------------------------------
-
-    // all elements on one line
+    // all on one line
     @media (min-width: $desktopRegular) {
         .footer-vulcan-logo {
-            padding-left: 10px;
+            padding-left: 100px;
             padding-bottom: 0px;
             margin-bottom: 0px;
         }
@@ -121,19 +127,42 @@ footer {
             display: flex;
             padding-left: 20px;
             padding-right: 20px;
-            padding-bottom: 40px;
+            padding-bottom: 5px;
         }
         .footer-contact-and-copyright {
-            margin-left: auto;
-            margin-right: auto;
+            display: flex;
+            margin-top: auto;
+            padding-bottom: 20px;
         }
         .footer-copy {
-            padding: 0px;
-            margin: 0px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-left: 40px;
+
         }
         .footer-elements-container {
             padding: 0px;
             margin: 0px;
+        }
+        .facebook-linkedin {
+            display: flex;
+            padding-right: 30px;
+        }
+        .facebook {
+            height: auto;
+            width: 30px;
+        }
+        .linkedin {
+            height: auto;
+            width: 30px;
+        }
+        .email {
+            height: auto;
+            width: 20px;
+        }
+        .phone {
+            height: auto;
+            width: 20px;
         }
     }
 }
