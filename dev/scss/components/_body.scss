@@ -200,8 +200,8 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    padding-bottom: 30%;
-    padding-top: 30%;
+    padding-bottom: 100px;
+    padding-top: 100px;
 
     h2 {
         text-align: center;
@@ -214,7 +214,7 @@
 
     p {
         text-align: center;
-        padding: 30px 80px 80px 80px;
+        padding: 30px 80px 60px 80px;
         color: white;
         font-size: 1.1em;
     }
@@ -238,34 +238,42 @@
 
     // MEDIA QUERY : SECTION 3
     @media (min-width: $tabletMedium) {
-        .section-4 {
-            padding-top: 0%;
-            padding-bottom: 0%;
-            
-            h2 {
-                text-align: center;
-                color: white;
-                font-size: 3.2em;
-                padding:20px;
-            }
-            p {
-                text-align: center;
-                padding: 30px 30px 30px 30px;
-                color: black;
-                font-size: 1.3em;
-                padding-left: 100px;
-                padding-right: 100px;
-            }
+        h2 {
+            text-align: center;
+            color: white;
+            font-size: 3.2em;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 0px;
         }
-
+        p {
+            text-align: center;
+            padding: 30px 15% 60px 15%;
+            color: white;
+            font-size: 1.3em;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
     }
 
     @media (min-width: $desktopRegular) {
+        .section-4 {
+            padding-top: 300px;
+            padding-bottom: 300px;
+        }
+        h2 {
+            padding-left: 25%;
+            padding-right: 25%;
+            font-size: 3em;
+        }
         p {
             text-align: center;
-            padding: 30px 150px 40px 150px;
+            padding: 30px 30% 40px 30%;
             color: white;
-            font-size: 1.3em;
+            font-size: 1.1em;
+        }
+        button {
+            font-size: 1.1em;
         }
     }
 }
