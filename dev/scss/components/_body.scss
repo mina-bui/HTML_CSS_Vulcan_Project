@@ -183,8 +183,8 @@
     }
 }
 */
-
-// SECTION 3 STYLING : "About Us"
+// -----------------------------------------------------------------------------
+// SECTION 4 : "About Us"
 .section-4 {
     background-image: url('/images/bg-section-about-us.jpg');
     background-attachment: fixed;
@@ -250,7 +250,8 @@
     }
 }
 
-// SECTION 4: VIDEO STYLING
+// -----------------------------------------------------------------------------
+// SECTION 5: VIDEO
 .video-container {
     position: relative;
     background-color: #429bd6;
@@ -299,7 +300,8 @@ iframe {
     }
     */
 
-// SECTION 5: NEWS LETTER & EMAIL SECTION BAR
+// -----------------------------------------------------------------------------
+// SECTION 6 : NEWSLETTER & EMAIL SECTION BAR
 .newsletter-section {
     background-color: #bedcef;
     padding-left: 15px;
@@ -324,10 +326,10 @@ iframe {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+        
     }
 
-    .form-group input{
-        display: inline-block;
+    .form-group input {
         border: none;
         padding: 10px 10px 10px 10px;
         width: 70%;
@@ -347,10 +349,16 @@ iframe {
         height: 1.90em;
     }
 
-    // MEDIA QUERY : SECTION 6
+    // MEDIA QUERY : SECTION 5
     @media (min-width: $tabletMedium) {
         .newsletter-section {
             display: flex;
+        }
+        .newsletter-header {
+            order: 1;
+        }
+        .newsletter-group {
+            order: 2;
         }
 /*         display: flex;
         flex-direction: row;
@@ -374,29 +382,22 @@ iframe {
             margin:0;
         }
     } */
+    }
     @media (min-width: $desktopRegular) {
         .newsletter-section {
             display: flex;
         }
         .newsletter-header {
             order: 1;
-
-            h4 {
-                text-align: center;
-                text-transform: none;
-                letter-spacing: -0.75px;
-                font-family: $bodyFont;
-                font-size: 1.5em;
-                font-weight: 500;
-                color: $blueDark;
-            }
         }
-        .newsletter-group P
+        .newsletter-group {
             order: 2;
+        }
     }
 }
 
-// SECTION 6 STYLING : "City Near You" and "Spec Vulcan" Banners
+// -----------------------------------------------------------------------------
+// SECTION 7 : "City Near You" and "Spec Vulcan" Banners
     // "installed in a city near you. find a vulcan install"
     .map {
         background-image: url('/images/map.jpg');
@@ -473,8 +474,7 @@ iframe {
         }
     }
 
-    // MEDIA QUERY : SECTION 6
-
+    // MEDIA QUERY : SECTION 7
     @media (min-width: $tabletMedium){
         .sixth-section-container {
             display: flex;
