@@ -1,7 +1,9 @@
 // Main Styling
 
-//-------------- Section 2
-// SECTION TWO: CUSTOMIZED PER ORDER
+// Contains Sections 2 and 3.
+
+// -----------------------------------------------------------------------------
+// SECTION TWO : CUSTOMIZED PER ORDER
 .white-background {
     a {
         display: none;
@@ -322,15 +324,15 @@
     }
 }
 
-//-------------- Section 3
+// -----------------------------------------------------------------------------
+// SECTION 3 : PRODUCT ADVISOR
+
 // Dark Blue Wave
 .dark-blue-wave {
     width: 100%;
     height: 80px;
     border-bottom: 1px solid $blueDark;
 }
-
-// SECTION THREE: PRODUCT ADVISOR 
 
 .product-selection {
     background-color: $blueDark;
