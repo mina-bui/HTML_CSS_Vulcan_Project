@@ -90,8 +90,11 @@ Media Query
 }
 
 @media (min-width: 850px) {
-
     //--- Section 2
+    // Header Font
+    .customize-order-section h2 {
+        color: $blueDark;
+    }
     // Machine 01
     .machine-01 h3 {
         color: $footerblue;
@@ -159,9 +162,15 @@ Media Query
 
         .header-button {
             font-size: 0.8em;
-        
 
         }
+    }
+
+    .customize-order-section p {
+        font-size: 1em;
+        font-weight: 400;
+        margin-left: 250px;
+        margin-right: 250px;
     }
 
 }

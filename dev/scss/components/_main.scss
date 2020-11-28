@@ -19,7 +19,9 @@
 .customize-order-section {
     h2 {
         text-align: center;
-        top: -10px;
+        //top: -20px;
+        margin-left: 150px;
+        margin-right: 150px;
     }
 
     p {
@@ -36,7 +38,6 @@
 .machine-03,
 .machine-04 {
     display: flex;
-
 }
 
 // Machine 01
@@ -90,98 +91,236 @@
     margin: 20px;
 }
 
+// Section 2 Media Query for Tablet / Desktop
 .customized-section {
+    // Phone --> Tablet
+    @media (min-width: 650px) {
+        // Machine 01
+        .machine-01 h3 {
+            margin-top: 90%;
+            margin-right: 60px;
+        }
 
+        // Machine 02
+        .machine-02 h3 {
+            margin-top: 60%;
+            margin-right: 44px;
+        }
+
+        // Machine 03
+        .machine-03 h3 {
+            margin-top: 60%;
+            margin-right: 50px;
+        }
+
+        // Machine 04
+        .machine-04 h3 {
+            margin-top: 65%;
+            margin-right: 50px;
+        }
+    }
+
+    @media (min-width: 750px) {
+        // Machine 01
+        .machine-01 h3 {
+            margin-top: 130%;
+            margin-right: 60px;
+        }
+
+        // Machine 02
+        .machine-02 h3 {
+            margin-top: 90%;
+            margin-right: 44px;
+        }
+
+        // Machine 03
+        .machine-03 h3 {
+            margin-top: 80%;
+            margin-right: 50px;
+        }
+
+        // Machine 04
+        .machine-04 h3 {
+            margin-top: 80%;
+            margin-right: 50px;
+        }
+    }
+
+    // Tablet --> Desktop
     @media (min-width: 850px) {
-    display: flex;
-    flex-direction: row;
-
-    // Hide the divider line
-    .br-section2 {
-        display: none;
-    }
-
-    // Machine 01
-    .machine-01 {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+
+        .customize-order-section {
+            br {
+                display: none;
+            }
+        }
+
+        // Hide the divider line
+        .br-section2 {
+            display: none;
+        }
+
+        // All Machine Flex Property
+        .machine-01, 
+        .machine-02, 
+        .machine-03, 
+        .machine-04 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        // Machine 01
+        .machine-01 {
+            img {
+                width: 85%;
+                margin-top: 30px;
+            }
+
+            h3 {
+                margin-top: 10%;
+                margin-left: 45px;
+            }
+
+            a {
+                text-align: center;
+                margin-right: 15px;
+                margin-top: 35px;
+            }
+        }
+
+        // Machine 02
+        .machine-02 {
+            img {
+                width: 90%;
+                height: auto;
+                margin-top: 35px;
+                margin-left: -30px;
+            }
+
+            h3 {
+                margin-top: 15%;
+                margin-right: 60px;
+            }
+
+            a {
+                text-align: center;
+                margin-top: 5px;
+                margin-right: 60px;
+            }
+        }
+
+        // Machine 03
+        .machine-03 {
+            img {
+                width: 98%;
+                height: auto;
+                margin-top: 35px;
+                margin-left: -30px;
+            }
+
+            h3 {
+                margin-top: 16%;
+                text-align: center;
+                margin-right: 70px;
+            }
+
+            a {
+                text-align: center;
+                margin-top: 5px;
+                margin-right: 70px;
+            }
+        }
+
+        // Machine 04
+        .machine-04 {
+            img {
+                width: 90%;
+                height: auto;
+                margin-top: 30px;
+                margin-left: 0px;
+            }
+            h3 {
+                margin-top: 16%;
+                text-align: center;
+                margin-right: 70px;
+            }
+
+            a {
+                text-align: center;
+                margin-top: 5px;
+                margin-right: 70px;
+            }
+        }
     }
 
-    .machine-01 img {
-        width: 200px;
-        margin-top: 30px;
-    }
+        //Desktop Smaller Screen to larger screen
+        @media (min-width: 1200px) {
+            .machine-01 {
+                h3 {
+                    margin-top: 20%;
+                    margin-left: 80px;
+                }
 
-    .machine-01 h3 {
-        margin-top: 10%;
-        margin-left: 45px;
-    }
+                a {
+                    margin-top: 50px;
+                    margin-left: 10px;
+                    margin-bottom: 30px;
+                }
+            }
 
-    .machine-01 a {
-        text-align: center;
-        margin-right: 15px;
-        margin-top: 35px;
-    }
+            .machine-02 {
+                h3 {
+                    margin-top: 16%;
+                    margin-right: 80px;
+                }
 
-    // Machine 02
-    .machine-02 {
-        display: flex;
-        flex-direction: column;
-    }
+                a {
+                    margin-top: 20px;
+                    margin-right: 80px;
+                    margin-bottom: 30px;
+                }
+            }
 
-    .machine-02 img {
-        width: 170px;
-        height: auto;
-        margin-top: 20px;
-        margin-left: 0px;
-    }
+            .machine-03 {
+                h3 {
+                    margin-top: 9%;
+                    margin-right: 100px;
+                }
 
-    .machine-02 h3 {
-        margin-top: 28%;
-        margin-right: 60px;
-    }
+                a {
+                    margin-top: 18px;
+                    margin-right: 100px;
+                    margin-bottom: 30px;
+                }
+            }
 
-    .machine-02 a {
-        text-align: center;
-        margin-top: 5px;
-        margin-right: 60px;
-    }
+            .machine-04 {
+                h3 {
+                    margin-top: 16%;
+                    margin-right: 100px;
+                }
 
-    // Machine 03
-    .machine-03 {
-        display: flex;
-        flex-direction: column;
-    }
-    .machine-03 h3 {
-        margin-top: 45%;
-        margin-right: 50px;
-    }
+                a {
+                    margin-top: 18px;
+                    margin-right: 100px;
+                    margin-bottom: 30px;
+                }
+            }
 
-    .machine-03 img {
-        width: 73%;
-        height: auto;
-        margin-left: 60px;
-    
-    }
+        }
 
-    // Machine 04
-    .machine-04 {
-        display: flex;
-        flex-direction: column;
-    }
-    .machine-04 h3 {
-        margin-top: 33%;
-        margin-right: 50px;
-    }
-
-    .machine-04 img {
-        width: 73%;
-        height: auto;
-        margin-left: 60px;
-    }
+        @media (min-width: 1400px) {
+            .machine-01 {
+                a {
+                    margin-top: 50px;
+                    margin-left: -70px;
+                    margin-bottom: 50px;
+                }
+            }
     }
 }
-
 
 //-------------- Section 3
 // Dark Blue Wave
@@ -239,8 +378,11 @@
     font-weight: 700;
 }
 
-.form-row1, .form-row2,.form-row3,
-.form-row4, .form-row5 {
+.form-row1, 
+.form-row2,
+.form-row3,
+.form-row4, 
+.form-row5 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
