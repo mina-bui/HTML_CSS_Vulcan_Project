@@ -207,47 +207,57 @@
         text-align: center;
         padding-top: 40px;
         color: white;
-        font-size: 2.5em;
+        font-size: 2.3em;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     p {
         text-align: center;
-        padding: 30px 80px 40px 80px;
+        padding: 30px 80px 80px 80px;
         color: white;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     button {
-    font-family: $headingFont;
-    text-transform: uppercase;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255);
-    padding: 13px 25px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.1em;
-    cursor: pointer;
-    display: -webkit-flex;
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 13px 25px;
+        margin-right: auto;
+        margin-left: auto;
+        color: white;
+        font-family: $headingFont;
+        font-size: 1.1em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        display: -webkit-flex;
     }
 
     // MEDIA QUERY : SECTION 3
     @media (min-width: $tabletMedium) {
-        h2 {
-            text-align: center;
-            color: white;
-            font-size: 3.2em;
-            padding:20px;
+        .section-4 {
+            padding-top: 0%;
+            padding-bottom: 0%;
+            
+            h2 {
+                text-align: center;
+                color: white;
+                font-size: 3.2em;
+                padding:20px;
+            }
+            p {
+                text-align: center;
+                padding: 30px 30px 30px 30px;
+                color: black;
+                font-size: 1.3em;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
         }
-    
-        p {
-            text-align: center;
-            padding: 30px 30px 30px 30px;
-            color: white;
-            font-size: 1.3em;
-        }
+
     }
 
     @media (min-width: $desktopRegular) {
