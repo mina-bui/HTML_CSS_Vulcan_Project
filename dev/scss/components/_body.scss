@@ -1,12 +1,16 @@
 // Body Styling
 
 // Contains Sections 4, 5, 6, and 7.
+//      SECTION 4 : "About Us"
+//      SECTION 5 : Video
+//      SECTION 6 : Newsletter & Email Section Bar
+//      SECTION 7 : "City Near You" and "Spec Vulcan" Banners
 
 // -----------------------------------------------------------------------------
 // Section 2 Code moved to _main.scss.
 
 /*
-// SECTION TWO: CUSTOMIZED PER ORDER
+// SECTION 2 : CUSTOMIZED PER ORDER
 .white-background {
     a {
         display: none;
@@ -257,7 +261,7 @@
 }
 
 // -----------------------------------------------------------------------------
-// SECTION 5: VIDEO
+// SECTION 5 : Video
 .video-container {
     position: relative;
     background-color: #429bd6;
@@ -307,7 +311,7 @@ iframe {
     */
 
 // -----------------------------------------------------------------------------
-// SECTION 6 : NEWSLETTER & EMAIL SECTION BAR
+// SECTION 6 : Newsletter & Email Section Bar
 .newsletter-section {
     background-color: #bedcef;
     padding-left: 15px;
