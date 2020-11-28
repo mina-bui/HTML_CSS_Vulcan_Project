@@ -385,7 +385,7 @@ iframe {
         background-attachment: scroll;
         background-position: center;
         background-size: cover;
-        padding-bottom: 33%;
+        padding-bottom: 30%;
         padding-top: 30%;
 
         h5 {
@@ -467,6 +467,7 @@ iframe {
             max-height: 100px;
             width: 100%;
             padding-top: 70px;
+            
             button {
                 background-color: $footerblue;
             }
@@ -477,6 +478,9 @@ iframe {
             width: 100%;
             padding-top: 100px;
             padding-bottom: none;
+       
+
+
             button {
                 background-color: $footerblue;
                 color: white;
