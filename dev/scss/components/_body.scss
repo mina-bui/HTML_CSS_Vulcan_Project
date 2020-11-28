@@ -348,9 +348,11 @@ iframe {
     }
 
     // MEDIA QUERY : SECTION 6
-    @media (min-width: 850px) {
-
-        display: flex;
+    @media (min-width: $tabletMedium) {
+        .newsletter-section {
+            display: flex;
+        }
+/*         display: flex;
         flex-direction: row;
 
         h4 {
@@ -371,6 +373,26 @@ iframe {
         .form-group .newsletter-group {
             margin:0;
         }
+    } */
+    @media (min-width: $desktopRegular) {
+        .newsletter-section {
+            display: flex;
+        }
+        .newsletter-header {
+            order: 1;
+
+            h4 {
+                text-align: center;
+                text-transform: none;
+                letter-spacing: -0.75px;
+                font-family: $bodyFont;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: $blueDark;
+            }
+        }
+        .newsletter-group P
+            order: 2;
     }
 }
 
@@ -456,18 +478,49 @@ iframe {
     @media (min-width: $tabletMedium){
         .sixth-section-container {
             display: flex;
-            flex-direction: row;
         }
         .map {
-            display: flex;
-
             order: 2;
+            max-height: 120px;
+            width: 100%;
+            padding-top: 200px;
+            padding-bottom: none;
+            //padding-bottom: 30px;
+            button {
+                background-color: $footerblue;
+                color: white;
+                border: white;
+            }
         }
         .contact {
-            display: flex;
-
             order: 1;
+            max-height: 120px;
+            width: 100%;
+            padding-top: 100px;
+            //padding-bottom: 30px;
+            button {
+                background-color: $footerblue;
+            }
+        }
     }
     @media (min-width: $desktopRegular) {
-
+        .sixth-section-container {
+            display: flex;
+        }
+        .map {
+            order: 2;
+            height: 100px;
+            button {
+                background-color: $footerblue;
+                color: white;
+                border: white;
+            }
+        }
+        .contact {
+            order: 1;
+            height: 100px;
+            button {
+                background-color: $footerblue;
+            }
+        }
     }
