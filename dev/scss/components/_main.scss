@@ -345,7 +345,7 @@
 
     // h2 and p
     h2 {
-        color: rgb(255, 255, 255);
+        color: white;
         text-align: center;
         letter-spacing: -0.75px;
         padding-top: 50px;
@@ -372,7 +372,7 @@
         display: block;
         width: 100%;
         padding: 2%;
-        background-color: #edeeee;
+        background-color: white;
         letter-spacing: -0.75px;
     }
     .form-group label {
@@ -421,10 +421,11 @@
         .form-group {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            
-            .product-row-1,
-            .product-row-2,
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .product-row-1, 
+            .product-row-2, 
             .product-row-3 {
                 display: flex;
                 label {
@@ -436,14 +437,20 @@
                 select {
                     font-size: 1.2em;
                     height: auto;
-                    width: 100%;
+                    width: 300px;
                     padding-top: 10px;
                     padding-bottom: 10px;
                 }
                 option {
-                    margin-left: 100px;
-                    margin-right: 100px;
+                    background-color: lightgrey;
                 }
+            }
+            .form-row1,
+            .form-row2,
+            .form-row3,
+            .form-row4,
+            .form-row5 {
+                margin-right: 200px;
             }
         }
     }
