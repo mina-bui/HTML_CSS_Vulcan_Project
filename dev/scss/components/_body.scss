@@ -360,7 +360,17 @@ iframe {
     // MEDIA QUERY : SECTION 5
     // mina: h4 and form need to be on one line for both tablet and desktop.
     @media (min-width: $tabletMedium) {
+        
+        .newsletter-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 20%;
+        }
 
+        
+
+       
     }
     @media (min-width: $desktopRegular) {
 
@@ -413,7 +423,7 @@ iframe {
     .contact {
         background-color: #154a66;
         padding-top: 20%;
-        padding-bottom: 40%;
+        padding-bottom: 30%;
 
         h5 {
             text-align: center;

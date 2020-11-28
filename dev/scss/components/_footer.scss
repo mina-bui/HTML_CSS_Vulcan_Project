@@ -3,6 +3,7 @@
 footer {
     position: relative;
 
+
     // wavy footer
      .light-blue-wave {
         position: absolute;
@@ -112,6 +113,10 @@ footer {
         .facebook-linkedin {
             display: flex;
             padding-right: 35px;
+        }
+
+        .contact {
+           padding-bottom: 30%;
         }
     }
 
