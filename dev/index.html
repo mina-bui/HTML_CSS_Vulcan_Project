@@ -190,47 +190,62 @@
 		<section class="product-selection">
 			<h2>Product Advisor</h2>
 			<p>Find your project's perfect fit.</p>
+
 			<!-- white line <hr> -->
 			<div class="br-section3"></div>
+
 			<!-- Form Section -->
 			<form action="/" method="get">
 				<div class="form-group">
-					<!-- Product Type -->
-					<div class="form-row1">
-						<label for="product-type">Product Type</label>
+
+					<!--tablet : flex row 1 -->
+					<div class = "product-row-1">
+						<!-- Product Type -->
+						<div class="form-row1">
+							<label for="product-type">Product Type</label>
 							<select name="product-type" id="product-type">
-							<option value="Select">Select</option>
-						</select>
+								<option value="Select">Select</option>
+							</select>
+						</div>
+						<!-- Screen Location -->
+						<div class="form-row2">
+							<label for="screen-location">Screen Location</label>
+							<select name="screen-location" id="screen-location">
+								<option value="Select">Select</option>
+							</select>
+						</div>
 					</div>
-					<!-- Screen Location -->
-					<div class="form-row2">
-						<label for="screen-location">Screen Location</label>
-						<select name="screen-location" id="screen-location">
-							<option value="Select">Select</option>
-						</select>
+
+					<!--tablet : flex row 2 -->
+					<div class = "product-row-2">
+						<!-- Flow Type -->
+						<div class="form-row3">
+							<label for="flow=type">Flow Type</label>
+							<select name="flow-type" id="flow-type">
+								<option value="Select">Select</option>
+							</select>
+						</div>
+						<!-- Channel Depth -->
+						<div class="form-row4">
+							<label for="channel-depth">Channel Depth</label>
+							<select name="channel-depth" id="channel-depth">
+								<option value="Select">Select</option>
+							</select>
+						</div>
 					</div>
-					<!-- Flow Type -->
-					<div class="form-row3">
-						<label for="flow=type">Flow Type</label>
-						<select name="flow-type" id="flow-type">
-							<option value="Select">Select</option>
-						</select>
-					</div>
-					<!-- Channel Depth -->
-					<div class="form-row4">
-						<label for="channel-depth">Channel Depth</label>
-						<select name="channel-depth" id="channel-depth">
-							<option value="Select">Select</option>
-						</select>
-					</div>
-					<!-- Channel Width -->
-					<div class="form-row5">
-						<label for="channel-width">Channel Width</label>
-						<select name="channel-width" id="channel-width">
-							<option value="Select">Select</option>
-						</select>
+
+					<!--tablet : flex row 3 -->
+					<div class = "product-row-3">
+						<!-- Channel Width -->
+						<div class="form-row5">
+							<label for="channel-width">Channel Width</label>
+							<select name="channel-width" id="channel-width">
+								<option value="Select">Select</option>
+							</select>
+						</div>
 					</div>
 				</div>
+				
 				<!-- submit button -->
 				<button class="section3-button">Find My Product</button>
 			</form>
