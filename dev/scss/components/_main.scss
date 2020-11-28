@@ -347,12 +347,14 @@
     h2 {
         color: rgb(255, 255, 255);
         text-align: center;
+        letter-spacing: -0.75px;
         padding-top: 50px;
         font-size: 30px;
     }
     p {
         color: white;
         text-align: center;
+        letter-spacing: -0.75px;
         padding: 15px;
     }
 
@@ -364,17 +366,19 @@
     
     // form styling
     .form-group {
-        margin:3%;
+        margin: 3%;
     }
     .form-group select {
         display: block;
         width: 100%;
         padding: 2%;
         background-color: #edeeee;
+        letter-spacing: -0.75px;
     }
     .form-group label {
         color: white;
         font-weight: 700;
+        letter-spacing: -0.75px;
     }
     .form-row1, 
     .form-row2,
@@ -395,26 +399,51 @@
        text-transform: uppercase;
        display: block;
        width: 95%;
+       letter-spacing: -0.75px;
     }
 
     // --------------------------------------------------
     // two forms per line, one form on last line
     @media (min-width: $tabletMedium) {
+        h2 {
+            font-size: 2.5em;
+            letter-spacing: -0.75px;
+            padding-top: 0px;
+        }
+        p {
+            font-size: 1.8em;
+            letter-spacing: -0.75px;
+            color: #429bd6;
+        }
+        .section3-button {
+            font-size: 1.3em;
+        }
         .form-group {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            // (1) product type, (2) screen location
-            .product-row-1 {
-                display: flex;
-            }
-            // (3) flow type, (4) channel depth
-            .product-row-2 {
-                display: flex;
-            }
-            // (5) channel width
+            
+            .product-row-1,
+            .product-row-2,
             .product-row-3 {
                 display: flex;
+                label {
+                    font-size: 1.2em;
+                    padding-bottom: 5px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                select {
+                    font-size: 1.2em;
+                    height: auto;
+                    width: 100%;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                option {
+                    margin-left: 100px;
+                    margin-right: 100px;
+                }
             }
         }
     }
@@ -428,7 +457,6 @@
             justify-content: center;
             padding-top: none;
             padding-bottom: none;
-
         }
     }
 }
