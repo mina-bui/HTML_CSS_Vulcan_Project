@@ -128,35 +128,30 @@ iframe {
 // SECTION 6 : Newsletter & Email Section Bar
 .newsletter-section {
     background-color: #bedcef;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     
-    h4 {
+    .newsletter-header h4 {
         text-align: center;
         text-transform: none;
         letter-spacing: -0.75px;
         font-family: $bodyFont;
-        font-size: 1.45em;
+        font-size: 1.5em;
         font-weight: 500;
         color: $blueDark;
-        padding-bottom: 25px;
+        padding: 30px 0px 25px 0px;
     }
-    
-    .newsletter-group {
+    .input-wrapper {
         text-align: center;
+        width: 100%;
+        padding: 0px 0px 30px 0px;
     }
-
-    .form-group input {
+    .newsletter-form input {
+        float: center;
         border: none;
-        padding: 10px 10px 10px 10px;
-        width: 300px;
-        height: 2.5em;
+        padding: 8px 8px 8px 8px;
+        margin: 0px 5px 0px 5px;
+        width: 70%;
     }
-
-    .form-group button {
+    .newsletter-form button {
         background-color: #429bd6;
         border: none;
         color: white;
@@ -166,25 +161,46 @@ iframe {
         font-weight: 700;
         padding: 5.5px 20px 5.5px 20px;
         margin-left: 5px;
-        height: 1.90em;
     }
 
     // mina: h4 and form need to be on one line for both tablet and desktop.
     @media (min-width: $tabletMedium) {
-        
-        .newsletter-section {
+        .newsletter-wrapper {
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
-            width: 20%;
+            align-items: center;
+            justify-content: center;
         }
+        .newsletter-header h4 {
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        .input-wrapper {
+            padding: 0px 0px 0px 0px;
+        }
+        .newsletter-header {
+            display: inline-flex;
+        }
+        .newsletter-form {
+            display: inline-flex;
+        }
+        .newsletter-form input {
+            width: 220px;
+        }
+        .newsletter-form button {
+            font-size: 1em;
+            padding: 8px 20px 8px 20px;
 
-        
-
-       
+        }
     }
     @media (min-width: $desktopRegular) {
-
+        .newsletter-header h4 {
+            font-size: 1.25em;
+            margin-right: 20px;
+        }
+        .newsletter-form input {
+            width: 400px;
+        }
     }
 }
 
@@ -289,7 +305,7 @@ iframe {
             width: 100%;
             padding-top: 150px;
             padding-bottom: 150px;
-            
+
             button {
                 background-color: $footerblue;
                 color: white;

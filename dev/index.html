@@ -270,20 +270,25 @@
 
 		<!-- SECTION 6 : NEWSLETTER & EMAIL SECTION BAR -->
 		<div class = "newsletter-section">
-			<!-- flex item 1 -->
-			<div class = "newsletter-header">
-				<h4>Stay in the know. Sign up for our newsletter.</h4>
-			</div>
-			<!-- flex item 2 -->
-			<div class = "newsletter-form"> <!-- mina: this div is a test -->
-				<div class = "form-group newsletter-group">
+			<!-- additional wrapper to center in tablet/desktop -->
+			<div class = "newsletter-wrapper">
+				<!-- flex item 1 (again, div needed to center) -->
+				<div class = "newsletter-header">
+					<h4>Stay in the know. Sign up for our newsletter.</h4>
+				</div>
+				<!-- flex item 2 -->
+				<div class = "newsletter-form">
 					<form action = "/" method = "get">
 						<label class = "visually-hidden" for = "email"></label>
-						<input type = "email" name = "email" id = "email" placeholder = "Enter your email">
-						<button type="submit">Submit</button>
+						<!-- input wrapper to center in mobile -->
+						<div class = "input-wrapper">
+							<input type = "email" name = "email" id = "email" placeholder = "Enter your email">
+							<button type="submit">Submit</button>
+						</div>
 					</form>
 				</div>
 			</div>
+
 		</div>
 
 		<!-- SECTION 7 : "City Near You" and "Spec Vulcan" Banners -->
