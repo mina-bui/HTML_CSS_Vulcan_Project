@@ -259,13 +259,43 @@
         }
     }
 
-        //Desktop Smaller Screen to larger screen
-        @media (min-width: 1200px) {
-            .machine-01 {
-                h3 {
-                    margin-top: 20%;
-                    margin-left: 80px;
-                }
+    @media (min-width: 900px) {
+        .machine-03 {
+            h3 {
+                margin-top: 10%;
+
+            }
+        }
+        
+    }
+
+    @media (min-width: 950px) {
+        .machine-01 {
+            h3 {
+                margin-top: 18%;
+
+            }
+        }
+    }
+
+    @media (min-width: 1070px) {
+        .machine-01 {
+            a {
+                margin-left: -35px;
+
+            }
+        }
+        
+    }
+
+
+    //Desktop Smaller Screen to larger screen
+    @media (min-width: 1200px) {
+        .machine-01 {
+            h3 {
+                margin-top: 20%;
+                margin-left: 80px;
+            }
 
                 a {
                     margin-top: 50px;
@@ -274,18 +304,18 @@
                 }
             }
 
-            .machine-02 {
-                h3 {
-                    margin-top: 16%;
-                    margin-right: 80px;
-                }
-
-                a {
-                    margin-top: 20px;
-                    margin-right: 80px;
-                    margin-bottom: 30px;
-                }
+        .machine-02 {
+            h3 {
+                margin-top: 16%;
+                margin-right: 80px;
             }
+
+            a {
+                margin-top: 20px;
+                margin-right: 80px;
+                margin-bottom: 30px;
+            }
+        }
 
             .machine-03 {
                 h3 {
@@ -315,14 +345,14 @@
 
         }
 
-        @media (min-width: 1400px) {
-            .machine-01 {
-                a {
-                    margin-top: 50px;
-                    margin-left: -70px;
-                    margin-bottom: 50px;
-                }
+    @media (min-width: 1400px) {
+        .machine-01 {
+            a {
+                margin-top: 50px;
+                margin-left: -70px;
+                margin-bottom: 50px;
             }
+        }
     }
 }
 
