@@ -231,8 +231,8 @@ iframe {
 
     .contact {
         background-color: #154a66;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 120px;
+        padding-bottom: 180px;
 
         h5 {
             text-align: center;
@@ -269,27 +269,27 @@ iframe {
     @media (min-width: $tabletMedium){
         .sixth-section-container {
             display: flex;
-            height: 400px;
         }
         .contact {
             order: 1;
-            max-height: 100px;
+            height: 500px;
             width: 100%;
             padding-top: 70px;
-            
+
+            h5 {
+                padding-top: 50px;
+            }
             button {
                 background-color: $footerblue;
             }
         }
         .map {
             order: 2;
-            max-height: 100px;
+            height: 500px;
             width: 100%;
-            padding-top: 100px;
-            padding-bottom: none;
-       
-
-
+            padding-top: 150px;
+            padding-bottom: 150px;
+            
             button {
                 background-color: $footerblue;
                 color: white;
@@ -303,7 +303,8 @@ iframe {
         }
         .map {
             order: 2;
-            height: 100px;
+            height: 500px;
+
             button {
                 background-color: $footerblue;
                 color: white;
@@ -312,7 +313,8 @@ iframe {
         }
         .contact {
             order: 1;
-            height: 100px;
+            height: 500px;
+
             button {
                 background-color: $footerblue;
             }
