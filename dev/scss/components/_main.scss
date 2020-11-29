@@ -391,16 +391,46 @@
     }
     
     .form-group select {
-        display: block;
         width: 100%;
         padding: 12px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        // Font Colors
         background-color: darkgrey;
-        letter-spacing: -0.75px;
         color: #505050;
         font-weight: 500;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        //hides the arrow buttons for stylization
+        appearance: none;
+    }
+
+    .form-group label {
         margin-top: 10px;
     }
 
+    // Arrow for Select options
+    .form-group {
+        .form-row1:after, 
+        .form-row2:after, 
+        .form-row3:after, 
+        .form-row4:after, 
+        .form-row5:after {
+            content: "";
+
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-top: 8px solid #505050; 
+            position: relative;
+            right: 25px;
+            top: 15px;
+
+            pointer-events: none;
+        }
+    }
+
+
+    // The background color of the form when the user clicks 
     select:active,
     select:focus {
         background-color: white;
@@ -429,6 +459,26 @@
             .section-3-header h2 {
                 margin-top: 0px;
                 padding-top: 0px;
+            }
+        }
+
+        // Arrow for Select options
+        .form-group {
+            .form-row1:after, 
+            .form-row2:after, 
+            .form-row3:after, 
+            .form-row4:after, 
+            .form-row5:after {
+                content: "";
+
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-top: 12px solid $blueMedium; 
+                position: relative;
+                right: 25px;
+                top: 17px;
+
+                pointer-events: none;
             }
         }
 
