@@ -168,9 +168,19 @@ Media Query
         font-size: 0.7em;
     }
     
-    
-
+    //---------------------Section 3
+    .product-selection {
+        padding-top: 0px;
+        margin-top: 0px;
+            h2 {
+                padding-top: -10px;
+            }
+        p {
+            color: $footerblue;
+        }
+    }
 }
+
 
 /*--- Desktop ---*/
 @media (min-width: $desktopSmall) {
