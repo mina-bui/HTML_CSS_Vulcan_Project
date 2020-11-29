@@ -49,7 +49,6 @@
         display: -webkit-flex;
     }
 
-    // MEDIA QUERY : SECTION 3
     @media (min-width: $tabletMedium) {
         h2 {
             text-align: center;
@@ -113,7 +112,6 @@ iframe {
     border: blue 3px solid;
     background-color: green;
 
-    // MEDIA QUERY: SECTION 4
     @media (min-width: $tabletMedium) {
         .video-container {
             position: relative;
@@ -147,7 +145,6 @@ iframe {
         padding-bottom: 25px;
     }
     
-    // label, input, button
     .newsletter-group {
         text-align: center;
     }
@@ -172,7 +169,6 @@ iframe {
         height: 1.90em;
     }
 
-    // MEDIA QUERY : SECTION 5
     // mina: h4 and form need to be on one line for both tablet and desktop.
     @media (min-width: $tabletMedium) {
         
@@ -194,14 +190,13 @@ iframe {
 
 // -----------------------------------------------------------------------------
 // SECTION 7 : "City Near You" and "Spec Vulcan" Banners
-    // "installed in a city near you. find a vulcan install"
     .map {
         background-image: url('/images/map.jpg');
         background-attachment: scroll;
         background-position: center;
         background-size: cover;
-        padding-bottom: 40%;
-        padding-top: 30%;
+        padding-bottom: 150px;
+        padding-top: 150px;
 
         h5 {
             text-align: center;
@@ -234,11 +229,10 @@ iframe {
         }
     }
 
-    // "ready to spec vulcan for your project? contact us"
     .contact {
         background-color: #154a66;
-        padding-top: 20%;
-        padding-bottom: 40%;
+        padding-top: 150px;
+        padding-bottom: 150px;
 
         h5 {
             text-align: center;
@@ -272,7 +266,6 @@ iframe {
         }
     }
 
-    // MEDIA QUERY : SECTION 7
     @media (min-width: $tabletMedium){
         .sixth-section-container {
             display: flex;
