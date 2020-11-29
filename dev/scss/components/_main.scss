@@ -329,7 +329,7 @@
 // -----------------------------------------------------------------------------
 // SECTION 3 : PRODUCT ADVISOR
 
-// dark blue wave background
+// background
 .dark-blue-wave {
     width: 100%;
     height: 80px;
@@ -337,13 +337,11 @@
 }
 
 .product-selection {
-    // background styling
     background-color: $blueDark;
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
 
-    // h2 and p
     h2 {
        margin-top: 80px;
     }
@@ -352,13 +350,11 @@
         margin: 18px;
     }
 
-    // white line <hr>
     .br-section3 {
         border-top: 1.5px solid white;
         margin: 12px;
     }
     
-    // form styling
     .form-group {
         margin: 12px;
     }
@@ -397,7 +393,6 @@
        height: 50px;
     }
 
-    // --------------------------------------------------
     // two forms per line, one form on last line
     @media (min-width: $tabletMedium) {
         .form-group {
