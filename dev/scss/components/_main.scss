@@ -343,73 +343,66 @@
     flex-direction: column;
 
     h2 {
-        color: white;
-        text-align: center;
-        letter-spacing: -0.75px;
-        padding-top: 50px;
-        font-size: 28px;
+       margin-top: 80px;
     }
+    
     p {
-        color: white;
-        text-align: center;
-        letter-spacing: -0.75px;
-        padding: 15px;
-        font-size: 18px;
+        margin: 18px;
     }
 
     .br-section3 {
-        border-top: 2px solid white;
-        margin: 18px;
+        border-top: 1.5px solid white;
+        margin: 12px;
     }
     
     .form-group {
-        margin: 3%;
+        margin: 12px;
     }
+    
     .form-group select {
         display: block;
         width: 100%;
-        padding: 2%;
+        padding: 12px;
         background-color: darkgrey;
         letter-spacing: -0.75px;
         color: #505050;
         font-weight: 500;
         margin-top: 10px;
     }
+
     select:active,
     select:focus {
         background-color: white;
     }
-    .form-group label {
-        color: white;
-        font-weight: 700;
-        letter-spacing: -0.75px;
-        font-size: 16px;
-    }
-    .form-row1, 
-    .form-row2,
-    .form-row3,
-    .form-row4, 
-    .form-row5 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+
+    
+
     .section3-button {
        background-color: #429bd6;
        border: none;
        color:white;
        margin-left: auto;
        margin-right: auto;
-       padding: 20px;
+       padding: 10px;
        margin-top: 40px;
        text-transform: uppercase;
        display: block;
        width: 95%;
        letter-spacing: -0.75px;
        font-weight: 500;
+       height: 50px;
     }
 
     // two forms per line, one form on last line
     @media (min-width: $tabletMedium) {
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            width: 900px;
+        }
+
+
+        /*
         h2 {
             font-size: 2.5em;
             letter-spacing: -0.75px;
@@ -474,12 +467,14 @@
                 margin-right: 20px;
             }
         }
+        */
     }
 
     
     // --------------------------------------------------
     // all forms on one line
     @media (min-width: $desktopRegular) {
+        /*
         .form-group {
             display: flex;
             flex-direction: row;
@@ -490,10 +485,12 @@
             .product-row-3 {
                 display: flex;
                 select {
-                    width: 300px;
+                
+                    width: 400px;
                 }
             }
         }
+        */
     }
 }
 
