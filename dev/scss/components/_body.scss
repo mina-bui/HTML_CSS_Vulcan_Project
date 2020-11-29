@@ -96,31 +96,32 @@
     position: relative;
     background-color: #429bd6;
     width: 100%;
-    height: 500px;
+    height: 350px;
 }
 
 iframe {
     display: block;
     position: absolute;
+    background-color: darkgreen;
+    border: #154a66 20px solid;
     top: 50px;
     right: 0;
     left: 0;
-    max-width: 80%;
-    height: 80%;
     margin-left: auto;
     margin-right: auto;
-    border: blue 3px solid;
-    background-color: green;
+    max-width: 80%;
+    height: 225px;
 
     @media (min-width: $tabletMedium) {
         .video-container {
             position: relative;
             background-color: #429bd6;
             width: 100%;
-            height: 700px;
+            height: 350px;
         }
         iframe {
-            width: 70%;
+            background-color: red;
+            height: 500px;
         }
     }
 }
@@ -128,7 +129,7 @@ iframe {
 // SECTION 6 : Newsletter & Email Section Bar
 .newsletter-section {
     background-color: #bedcef;
-    
+    // additional header div wrapper needed to center
     .newsletter-header h4 {
         text-align: center;
         text-transform: none;
@@ -139,6 +140,7 @@ iframe {
         color: $blueDark;
         padding: 30px 0px 25px 0px;
     }
+    // additional input & submit div wrapper needed to center
     .input-wrapper {
         text-align: center;
         width: 100%;
@@ -162,15 +164,16 @@ iframe {
         padding: 5.5px 20px 5.5px 20px;
         margin-left: 5px;
     }
-
-    // mina: h4 and form need to be on one line for both tablet and desktop.
     @media (min-width: $tabletMedium) {
+        // display wrap and display inline-flex needed to make divs into single line
         .newsletter-wrapper {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            padding: 0px 3px 0px 3px;
         }
+        // smaller h4 in tablet, margin-right added
         .newsletter-header h4 {
             font-size: 1.2em;
             margin-right: 10px;
@@ -184,6 +187,7 @@ iframe {
         .newsletter-form {
             display: inline-flex;
         }
+        // input width is increased in tablet mode
         .newsletter-form input {
             width: 220px;
         }
@@ -194,10 +198,12 @@ iframe {
         }
     }
     @media (min-width: $desktopRegular) {
+        // increased margin-right in desktop
         .newsletter-header h4 {
             font-size: 1.25em;
             margin-right: 20px;
         }
+        // input width is increased even more in desktop mode
         .newsletter-form input {
             width: 400px;
         }
@@ -213,7 +219,7 @@ iframe {
         background-size: cover;
         padding-bottom: 150px;
         padding-top: 150px;
-
+        
         h5 {
             text-align: center;
             color: #504f4f;
@@ -225,7 +231,6 @@ iframe {
             padding-left: 13%;
             padding-right: 13%;
         }
-
         button {
             font-family: $headingFont;
             text-transform: uppercase;
