@@ -84,6 +84,7 @@ footer {
         display: flex;
         padding-right: 15px;
     }
+
 // --------------------------------------------------
     // two lines: vulcan and contact on one line, copyright on second line
     @media (min-width: $tabletMedium) {
@@ -138,6 +139,7 @@ footer {
             display: flex;
             margin-top: auto;
             padding-bottom: 20px;
+            padding-left: 300px;
         }
         .footer-copy {
             margin-top: auto;
@@ -155,19 +157,19 @@ footer {
         }
         .facebook {
             height: auto;
-            width: 30px;
+            width: 25px;
         }
         .linkedin {
             height: auto;
-            width: 30px;
+            width: 25px;
         }
         .email {
             height: auto;
-            width: 20px;
+            width: 16px;
         }
         .phone {
             height: auto;
-            width: 20px;
+            width: 16px;
         }
     }
 }

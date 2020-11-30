@@ -41,7 +41,7 @@
         text-transform: uppercase;
         text-align: center;
         text-decoration: none;
-        padding: 13px 25px;
+        padding: 10px 25px;
         margin-right: auto;
         margin-left: auto;
         cursor: pointer;
@@ -81,7 +81,7 @@
         button {
             font-size: 1.1em;
             margin-top: 20px;
-            padding: 10px 40px 10px 40px;
+            padding: 10px 60px 10px 60px;
             border: 1.5px solid white;
         }
     }
@@ -224,7 +224,7 @@ iframe {
             color: #504f4f;
             text-transform: uppercase;
             letter-spacing: -0.75px;
-            font-size: 2em;
+            font-size: 2.1em;
             font-weight: 700;
             padding: 0px 13% 20px 13%;
         }
@@ -256,9 +256,9 @@ iframe {
             color: #ffffff;
             text-transform: uppercase;
             letter-spacing: -0.75px;
-            font-size: 2em;
+            font-size: 2.1em;
             font-weight: 700;
-            padding: 0px 13% 20px 13%;
+            margin: 0px 70px 20px 70px;
         }
 
         button {
@@ -270,7 +270,7 @@ iframe {
             color: #ffffff;
             border: 2px solid #ffffff;
             padding: 13px 25px;
-            margin-top: 20px;
+            margin-top: 50px;
             margin-right: auto;
             margin-left: auto;
             text-align: center;
@@ -292,10 +292,14 @@ iframe {
             padding-top: 70px;
 
             h5 {
-                padding-top: 50px;
+                padding-top: 55px;
             }
             button {
                 background-color: $footerblue;
+                border: none;
+                margin-top: 30px;
+                margin-bottom: 5px;
+                //padding-bottom: 0px;
             }
         }
         .map {
@@ -307,7 +311,7 @@ iframe {
             button {
                 background-color: $footerblue;
                 color: white;
-                border: white;
+                border: none;
             }
         }
     }
@@ -315,22 +319,46 @@ iframe {
         .sixth-section-container {
             display: flex;
         }
+
+        .contact {
+            order: 1;
+            height: 500px;
+            //padding: 60px 0px 180px 0px;
+
+            h5 {
+                font-size: 2.3em;
+                font-weight: 800;
+                br {
+                    display: none;
+                }
+                padding: 70px 60px 0 60px;
+            }
+
+            button {
+                background-color: $footerblue;
+                padding: 10px 25px;
+                margin-top: 80px;
+                
+            }
+        }
+
         .map {
             order: 2;
             height: 500px;
 
-            button {
-                background-color: $footerblue;
-                color: white;
-                border: white;
+            h5 {
+                font-size: 2.6em;
+                padding-top: 0px;
+                
             }
-        }
-        .contact {
-            order: 1;
-            height: 500px;
 
             button {
                 background-color: $footerblue;
+                color: white;
+                border: none;
+                padding: 10px 25px;
+                margin-top: 43px;
             }
         }
+
     }
