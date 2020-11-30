@@ -81,6 +81,12 @@
             font-size: 1.1em;
         }
     }
+
+    @media (min-width: 1400px) {
+        .section-4 {
+            padding: 400px 0px 400px 0px;
+        }
+    }
 }
 
 // -----------------------------------------------------------------------------
@@ -102,12 +108,9 @@ iframe {
     display: block;
     position: absolute;
     border: #154a66 20px solid;
-    //background-color: darkgreen;
+    background-color: darkgreen;
     top: 0;
-    //right: 0;
     left: 0;
-    //margin-left: auto;
-    //margin-right: auto;
     width: 100%;
     height: 100%;
 }
@@ -117,83 +120,8 @@ iframe {
         padding: 80px 120px;
     }
 }
-    // commented out the following original code to test my own code.
-/*     @media (min-width: $tabletMedium) {
-        .video-container {
-            position: relative;
-            background-color: #429bd6;
-            width: 100%;
-            height: 480px;
-        }
-        iframe {
-            background-color: darkgreen;
-            height: 340px;
-        } 
-    } */
-    /*
-    // start mina's test code
-    @media (min-width: $tabletSmall) {
-        .video-container {
-            height: 400px;
-        }
-        iframe {
-            //background-color: orange; // for testing purposes
-            width: 75%;
-            height: 300px;
-        }
-    }
-    @media (min-width: $tabletMedium) {
-        .video-container {
-            height: 400px;
-        }
-        iframe {
-            //background-color: yellow; // for testing purposes
-            width: 60%;
-            height: 300px;
-        }
-    }
-    @media (min-width: $desktopSmall) {
-        .video-container {
-            height: 400px;
-        }
-        iframe {
-            //background-color: lightblue; // for testing purposes
-            width: 50%;
-            height: 300px;
-        }
-    }
-    @media (min-width: 1000px) {
-        .video-container {
-            height: 500px;
-        }
-        iframe {
-            //background-color: magenta; // for testing purposes
-            width: 65%;
-            height: 400px;
-        }
-    }
-    @media (min-width: $desktopRegular) {
-        .video-container {
-            height: 500px;
-        }
-        iframe {
-            //background-color: white; // for testing purposes
-            width: 55%;
-            height: 400px;
-        }
-    }
-    @media (min-width: 1350px) {
-        .video-container {
-            height: 500px;
-        }
-        iframe {
-            //background-color: blue; // for testing purposes
-            width: 36%;
-            height: 400px;
-        }
-    }
-    // end mina's test code
-*/
+
+
 
 // -----------------------------------------------------------------------------
 // SECTION 6 : Newsletter & Email Section Bar
