@@ -34,7 +34,7 @@
     button {
         color: white;
         background-color: transparent;
-        border: 2px solid white;
+        border: 1.5px solid white;
         font-family: $headingFont;
         font-size: 1.1em;
         font-weight: 700;
@@ -64,28 +64,30 @@
     }
 
     @media (min-width: $desktopRegular) {
-        .section-4 {
-            padding: 300px 0px 300px 0px;
-        }
+            padding: 200px 0px 200px 0px;
+
         h2 {
-            font-size: 3em;
-            padding: 0px 25% 0px 25%;
+            font-size: 3.4em;
+            padding: 0px 20% 0px 20%;
         }
+
         p {
             text-align: center;
             color: white;
             font-size: 1.1em;
-            padding: 30px 30% 40px 30%;
+            padding: 50px 26% 50px 26%;
         }
+
         button {
             font-size: 1.1em;
+            margin-top: 20px;
+            padding: 10px 40px 10px 40px;
+            border: 1.5px solid white;
         }
     }
 
     @media (min-width: 1400px) {
-        .section-4 {
-            padding: 400px 0px 400px 0px;
-        }
+            padding: 200px 0px 200px 0px;
     }
 }
 
